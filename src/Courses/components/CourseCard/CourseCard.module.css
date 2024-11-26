@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+@font-face {
+  font-family: 'SVN-Nexa';
+  src: url('/src/Platform/Assets/fonts/SVN-Nexa\ Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Main section styling */
+.coursesSectionPlatform {
+  text-align: center;
+  padding-top: 65px;
+  padding-right: 221px;
+  padding-bottom: 104px;
+  padding-left: 221px;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+}
+
+/* Title section styling */
+.containerCoursesSectionTitle {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Icon styling */
+.coursesSectionPlatformIconDot {
+  width: 28px;
+  height: 28px;
+  margin-top: 20px;
+}
+
+.coursesSectionPlatformIconSun {
+  width: 89px;
+  height: 89px;
+  margin-top: -61px;
+}
+
+/* Title styling */
+.coursesSectionPlatformTitleFirst {
+  font-family: 'SVN-Nexa', sans-serif;
+  font-size: 22px;
+  color: #0fc8a9;
+}
+
+.coursesSectionPlatformTitleSecond {
+  font-size: 31px;
+  color: #000;
+  margin-top: -7px;
+  margin-bottom: 59px;
+  font-family: 'SVN-Nexa', sans-serif;
+}
+
+/* Course card container styling */
+.coursesSectionPlatformContainer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  flex-wrap: nowrap;
+}
+
+/* Individual course card styling */
+.containerCourses {
+  width: 412px; 
+  height: 477px;
+  padding: 17px 21px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 20px;
+  border: 3px solid #58bc96;
+  z-index: 1;
+}
+
+.containerCourses:hover {
+  border: 3px solid #069b63;
+}
+
+/* Course card image styling */
+.containerCourses .imgCourses {
+  width: 362px;
+  height: 218px;
+  border-radius: 5px;
+  margin-bottom: 16px;
+  transition: opacity 0.5s ease;
+}
+
+/* Instructor information styling */
+.containerCourses .containerInfoLecturer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.containerCourses .containerInfoLecturer .imgAvatar {
+  width: 60px;
+}
+
+.containerCourses .containerInfoLecturer .nameInstructor {
+  font-family: 'SVN-Nexa', sans-serif;
+  font-size: 18px;
+  margin-bottom: 0px;
+  margin-right: 15%;
+}
+
+.containerCourses .containerInfoLecturer .imgRating {
+  width: 40px;
+}
+
+/* Course description styling */
+.containerCourses .description {
+  font-family: 'SVN-Nexa', sans-serif;
+  font-size: 18px;
+  text-align: justify;
+  margin-top: 16px;
+}
+
+/* Line separator */
+.containerCourses .line {
+  border: 1px solid #91e6d7;
+  width: 100%;
+}
+
+/* Course learning information */
+.containerCourses .containerInforLearning {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 18px;
+}
+
+/* Individual learning detail */
+.containerInforLearning .containerInforLesson,
+.containerInforLearning .containerInforStudent,
+.containerInforLearning .containerInforLevel {
+  display: flex;
+  align-items: center;
+}
+
+.containerInforLearning .containerInforLesson .iconLesson,
+.containerInforLearning .containerInforStudent .iconStudent,
+.containerInforLearning .containerInforLevel .iconLevel {
+  width: 20px;
+}
+
+.containerInforLearning .containerInforLesson .lesson,
+.containerInforLearning .containerInforStudent .student,
+.containerInforLearning .containerInforLevel .level {
+  margin-left: 3px;
+  margin-bottom: 0px;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+}
+

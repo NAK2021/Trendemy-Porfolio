@@ -1,0 +1,298 @@
+@font-face {
+  font-family: "SVN-Nexa";
+  src: url("/src/Platform/Assets/fonts/SVN-Nexa\ Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contactPlatformContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fdfeeb;
+  padding-top: 30px;
+  padding-bottom: 37px;
+  padding-right: 250px;
+  padding-left: 250px;
+}
+
+.contactPlatformTitle,
+.contactPlatformImage {
+  flex: 1;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.contactPlatformTitle,
+.contactPlatformForm {
+  margin: 0;
+}
+
+.contactPlatformTitle h1 {
+  font-family: "SVN-Nexa", sans-serif;
+  font-size: 31px;
+  color: #0fc8a9;
+}
+
+.contactPlatformTitle h4 {
+  font-family: "SVN-Nexa", sans-serif;
+  font-size: 18px;
+  color: #000000;
+  margin-bottom: 26px;
+}
+
+.contactPlatformTitle h4 span {
+  font-family: "SVN-Nexa", sans-serif;
+  font-size: 18px;
+  color: #0fc8a9;
+}
+
+.contactPlatformImage {
+  display: flex;
+}
+
+.imgContactPlatform {
+  width: 646px;
+  height: auto;
+  margin-bottom: 0;
+}
+
+.formGroupPlatform {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.formGroupPlatform input,
+.formGroupPlatform textarea {
+  width: 100%;
+  padding: 11px;
+  border: none;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-color: #eaeaea;
+  font-size: 14px;
+}
+
+.formGroupPlatform textarea {
+  height: 140px;
+}
+
+.iconContactPlatform {
+  position: absolute;
+  right: 1rem;
+  font-size: 1.5rem;
+  color: #0fc8a9;
+}
+
+.btnPlatform {
+  display: flex;
+  justify-content: center;
+}
+
+.buttonRegisterContactPlatform {
+  display: inline-block;
+  width: 279px;
+  height: 52px;
+  margin-top: 32px;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.buttonRegisterContactPlatform:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #58bc96;
+  border-radius: 30px;
+  z-index: -2;
+}
+
+.buttonRegisterContactPlatform:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #069b63;
+  transition: all 0.3s;
+  border-radius: 30px;
+  z-index: -1;
+}
+
+.buttonRegisterContactPlatform:hover {
+  color: #ffffff;
+}
+
+.buttonRegisterContactPlatform:hover:before {
+  width: 100%;
+}
+
+/* The animation fades up */
+.contactPlatformImage,
+.contactPlatformTitle {
+  opacity: 0;
+  animation-duration: 2s;
+}
+
+.animate__fadeInUp {
+  opacity: 1;
+  animation-name: animate__fadeInUp;
+}
+
+@keyframes animate__fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (min-width: 1400px) {
+  .contactPlatformContainer {
+    padding-right: 214px;
+    padding-left: 101px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .contactPlatformContainer {
+    padding-right: 150px;
+    padding-left: 120px;
+  }
+
+  .imgContactPlatform {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .contactPlatformContainer {
+    padding-right: 80px;
+    padding-left: 50px;
+  }
+
+  .imgContactPlatform {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .ContactPlatformContainer {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 130px;
+    padding-left: 130px;
+  }
+
+  .ContactPlatformTitle {
+    width: 70%;
+    text-align: center;
+  }
+
+  .BackgroundContactPlatform,
+  .ImgContactPlatform {
+    display: none;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .ContactPlatformContainer {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+
+  .ContactPlatformTitle {
+    width: 80%;
+    text-align: center;
+  }
+
+  .BackgroundContactPlatform,
+  .ImgContactPlatform {
+    display: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .ContactPlatformContainer {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .ContactPlatformTitle {
+    width: 80%;
+    text-align: center;
+  }
+
+  .ContactPlatformTitle h1 {
+    font-size: 190%;
+  }
+
+  .formGroupPlatform {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .formGroupPlatform input,
+  .formGroupPlatform textarea {
+    width: 90%;
+    padding: 11px;
+  }
+
+  .formGroupPlatform textarea {
+    height: 140px;
+  }
+
+  .iconContactPlatform {
+    right: 2.6rem;
+  }
+
+  .buttonRegisterContactPlatform {
+    width: 45%;
+    width: 200px;
+    height: 54px;
+  }
+
+  .BackgroundContactPlatform,
+  .ImgContactPlatform {
+    display: none;
+  }
+}

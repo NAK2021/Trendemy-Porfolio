@@ -1,0 +1,242 @@
+/* Importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+@font-face {
+  font-family: 'SVN-Nexa';
+  src: url('/src/Platform/Assets/fonts/SVN-Nexa\ Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Learning Path container */
+.learningPathContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 170px;
+  padding-bottom: 220px;
+  padding-right: 240px;
+  padding-left: 240px;
+  background-color: #FFFFFF;
+}
+
+/* Content wrapper */
+.learningPathContent {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Learning Path Column */
+.learningPathColumn {
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+}
+
+/* Left panel styling (Learning Path Section) */
+.learningPathPanel {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Learning Path title styling */
+.learningPathPanel h5 {
+  font-size: 22px;
+  font-family: 'SVN-Nexa', sans-serif;
+  color: #00bfa5;
+}
+
+.learningPathPanel h4 {
+  font-size: 31px;
+  font-family: 'SVN-Nexa', sans-serif;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+/* Learning Path item container */
+.learningPathItem {
+  background-color: #FFFFFF;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  justify-content: space-between;
+}
+
+.learningPathModule {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  color: #000000;
+  font-size: 18px;
+  font-family: 'SVN-Nexa', sans-serif;
+}
+
+.learningPathDetails {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+  padding: 0 18px;
+  margin: 0;
+}
+
+.learningPathDetails p {
+  position: relative;
+  padding-left: 20px;
+  margin: 0 0 5px 0;
+}
+
+.learningPathDetails p::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  top: -11px;
+  color: #00bfa5;
+  font-size: 50px;
+  line-height: 1;
+}
+
+/* Icon styling */
+.learningPathIconBackground {
+  background-color: #00bfa5;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.learningPathIcon {
+  font-size: 22px; 
+  font-weight: bold; 
+  color: #ffffff; 
+  transition: transform 0.3s ease-in-out; 
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+}
+
+/* Open state */
+.learningPathOpen .learningPathModule {
+  color: #00bfa5;
+}
+
+.learningPathOpen .learningPathIconBackground {
+  background-color: #000000;
+}
+
+.learningPathOpen .learningPathIcon {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.learningPathOpen .learningPathDetails {
+  max-height: 500px;
+  padding: 0px 18px;
+  background-color: #ffffff;
+  border-radius: 0 0 5px 5px;
+  font-size: 16px;
+  color: #000;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Button styling */
+.learningPathButton {
+  margin-top: 30px;
+}
+
+.learningPathButton button {
+  position: relative;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  width: 164px;
+  height: 52px;
+  border: 1px solid #58bc96;
+  /* outline: none; */
+  color: #fff;
+  background: #58bc96;
+  cursor: pointer;
+  z-index: 0;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+  overflow: hidden;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+.learningPathButton button::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 200px;
+  height: 120px;
+  background: #069b63;
+  z-index: -1;
+  transition: transform 0.5s ease-in-out;
+  transform: scaleX(0) scaleY(0);
+  transform-origin: left bottom;
+  border-top-left-radius: 170px;
+  border-top-right-radius: 320px;
+}
+
+.learningPathButton button:hover::before {
+  transform: scaleX(1) scaleY(1);
+}
+
+/* Circle Red */
+.decorationCircleRed {
+  position: absolute;
+  top: 67%;
+  left: 11%;
+  width: 63.09px;
+  height: 65px;
+  border: 7px solid #EA2E22;
+  border-radius: 50%;
+}
+
+/* Triangle Blue */
+.decorationTriangleBlue {
+  position: absolute;
+  top: 20%;
+  left: 11.5%;
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 50px solid #39C3E1;
+  transform: rotate(140deg);
+}
+
+/* Circle Outline Red */
+.decorationCircleOutlineRed {
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  width: 76.11px;
+  height: 79px;
+  border: 8px solid #EA2E22;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+/* Triangle Yellow */
+.decorationTriangleYellow {
+  position: absolute;
+  top: 70%;
+  right: 11%;
+  width: 0;
+  height: 0;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 70px solid #EFF338; 
+  transform: rotate(310deg);
+}

@@ -1,0 +1,277 @@
+@font-face {
+  font-family: "SVN-Nexa";
+  src: url("/src/Platform/Assets/fonts/SVN-Nexa\ Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.courseObjectives {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fdfeeb;
+  padding-top: 127px;
+  padding-bottom: 104px;
+  padding-right: 240px;
+  padding-left: 240px;
+}
+
+.courseObjectivesTitle,
+.backgroundCourseObjectives {
+  flex: 1;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.courseObjectivesTitle h1 {
+  font-family: "SVN-Nexa", sans-serif;
+  font-size: 22px;
+  color: #0fc8a9;
+}
+.courseObjectivesTitle h4 {
+  font-family: "SVN-Nexa", sans-serif;
+  font-size: 31px;
+  width: 486px;
+  color: #000000;
+}
+
+.underlineCourseObjectives {
+  width: 450px;
+  height: 2px;
+  background-color: #91e6d7;
+  border: none;
+  margin-top: 23px;
+  margin-bottom: 24px;
+}
+
+.courseObjectivesContents {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  margin-bottom: 39px;
+}
+
+.imgTick img {
+  width: 24px;
+  height: auto;
+  margin-right: 14px;
+}
+
+.text {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #000000;
+}
+
+.imgCourseObjectives {
+  width: 564px;
+  height: 499px;
+}
+
+/* The animation */
+.courseObjectivesTitle,
+.backgroundCourseObjectivesCourseContent {
+  opacity: 0;
+  animation-duration: 2s;
+}
+
+.animate__fadeInUp {
+  opacity: 1;
+  animation-name: animate__fadeInUp;
+}
+
+@keyframes animate__fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (min-width: 1400px) {
+  .courseObjectives {
+    padding-right: 143px;
+    padding-left: 215px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .OverviewCourse {
+    padding-right: 140px;
+    padding-left: 140px;
+  }
+
+  .OverviewCourseContent p {
+    width: 600px;
+    max-width: 90%;
+  }
+
+  .OverviewCourseImage img {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .OverviewCourse {
+    padding-right: 80px;
+    padding-left: 80px;
+  }
+
+  .OverviewCourseContent p {
+    width: 600px;
+    max-width: 90%;
+  }
+
+  .OverviewCourseImage img {
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .OverviewCourse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-right: 130px;
+    padding-left: 130px;
+  }
+
+  .OverviewCourseTitle {
+    width: 80%;
+  }
+
+  .OverviewCourseContent {
+    display: flex;
+    justify-content: center;
+  }
+
+  .OverviewCourseContent p {
+    width: 600px;
+    max-width: 80%;
+  }
+
+  .BodyPartsOverviewCourse {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .OverviewCourseImage img {
+    margin-top: 100px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .OverviewCourse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .OverviewCourseTitle {
+    width: 80%;
+  }
+
+  .OverviewCourseContent {
+    display: flex;
+    justify-content: center;
+  }
+
+  .OverviewCourseContent p {
+    width: 600px;
+    max-width: 75%;
+  }
+
+  .BodyPartsOverviewCourse {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .OverviewCourseImage img {
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .OverviewCourse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .OverviewCourseTitle {
+    width: 70%;
+  }
+
+  .OverviewCourseContent {
+    display: flex;
+    justify-content: center;
+  }
+
+  .OverviewCourseContent p {
+    width: 600px;
+    max-width: 46%;
+  }
+
+  .BodyPartsOverviewCourse {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .OverviewCourseContents {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+  }
+
+  .step {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+  }
+
+  .number {
+    font-size: 26px;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 12px;
+    width: 45px;
+    height: 44px;
+    margin-right: 20px;
+  }
+
+  .text {
+    font-size: 18px;
+  }
+
+  .OverviewCourseImage img {
+    width: 80%;
+    margin-top: 100px;
+  }
+}

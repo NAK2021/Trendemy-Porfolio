@@ -1,0 +1,301 @@
+@font-face {
+  font-family: "SVN-Nexa";
+  src: url("/src/Platform/Assets/fonts/SVN-Nexa\ Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contactLecturer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding-top: 37px;
+  padding-bottom: 37px;
+  padding-right: 250px;
+  padding-left: 250px;
+}
+
+.backgroundContactLecturer,
+.contactLecturerTitle {
+  flex: 1;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.contactLecturerTitle,
+.contactLecturerForm {
+  margin: 0;
+}
+
+.contactLecturerTitle h1 {
+  font-family: "SVN-Nexa", sans-serif;
+  font-size: 31px;
+  color: #0fc8a9;
+}
+
+.contactLecturerTitle h4 {
+  font-family: "SVN-Nexa", sans-serif;
+  font-size: 18px;
+  color: #000000;
+  margin-bottom: 26px;
+}
+
+.contactLecturerTitle h4 span {
+  font-family: "SVN-Nexa", sans-serif;
+  font-size: 18px;
+  color: #0fc8a9;
+}
+
+.backgroundContactLecturer {
+  display: flex;
+}
+
+.imageContactLecturer {
+  width: 646px;
+  height: auto;
+  margin-bottom: 0;
+}
+
+.formGroupLecturer {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.formGroupLecturer input,
+.formGroupLecturer textarea {
+  width: 100%;
+  padding: 11px;
+  border: none;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-color: #eaeaea;
+  font-size: 14px;
+}
+
+.formGroupLecturer textarea {
+  height: 140px;
+}
+
+.iconContactLecturer {
+  position: absolute;
+  right: 1rem;
+  font-size: 1.5rem;
+  color: #0fc8a9;
+}
+
+.btnLecturer {
+  display: flex;
+  justify-content: center;
+}
+
+.buttonRegisterContactLecturer {
+  display: inline-block;
+  width: 279px;
+  height: 52px;
+  margin-top: 32px;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.buttonRegisterContactLecturer:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #58bc96;
+  border-radius: 30px;
+  z-index: -2;
+}
+
+.buttonRegisterContactLecturer:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #069b63;
+  transition: all 0.3s;
+  border-radius: 30px;
+  z-index: -1;
+}
+
+.buttonRegisterContactLecturer:hover {
+  color: #ffffff;
+}
+
+.buttonRegisterContactLecturer:hover:before {
+  width: 100%;
+}
+
+/* The animation fades up */
+.backgroundContactLecturer,
+.contactLecturerTitle {
+  opacity: 0;
+  animation-duration: 2s;
+}
+
+.animate__fadeInUp {
+  opacity: 1;
+  animation-name: animate__fadeInUp;
+}
+
+@keyframes animate__fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (min-width: 1400px) {
+  .contactLecturer {
+    padding-right: 214px;
+    padding-left: 101px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .contactLecturer {
+    padding-right: 150px;
+    padding-left: 120px;
+  }
+
+  .imageContactLecturer {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .contactLecturer {
+    padding-right: 80px;
+    padding-left: 50px;
+  }
+
+  .imageContactLecturer {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .contactLecturer {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 130px;
+    padding-left: 130px;
+  }
+
+  .ContactCourseTitle {
+    width: 70%;
+    text-align: center;
+  }
+
+  .ContactCourseUnderline,
+  .BackgroundContactCourse,
+  .imagimageContactCoursee {
+    display: none;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .ContactCourse {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+
+  .ContactCourseTitle {
+    width: 80%;
+    text-align: center;
+  }
+
+  .ContactCourseUnderline,
+  .BackgroundContactCourse,
+  .imageContactCourse {
+    display: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .ContactCourse {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .ContactCourseTitle {
+    width: 80%;
+    text-align: center;
+  }
+
+  .ContactCourseTitle h1 {
+    font-size: 190%;
+  }
+
+  .formGroupCourse {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .formGroupCourse input,
+  .formGroupCourse textarea {
+    width: 90%;
+    padding: 11px;
+  }
+
+  .formGroupCourse textarea {
+    height: 140px;
+  }
+
+  .iconContactCourse {
+    right: 2.6rem;
+  }
+
+  .buttonRegisterContactCourse {
+    width: 45%;
+    width: 200px;
+    height: 54px;
+  }
+
+  .ContactCourseUnderline,
+  .BackgroundContactCourse,
+  .imageContactCourse {
+    display: none;
+  }
+}

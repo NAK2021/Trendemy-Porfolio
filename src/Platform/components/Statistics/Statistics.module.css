@@ -1,0 +1,249 @@
+@font-face {
+  font-family: "SVN-Nexa";
+  src: url("/src/Platform/Assets/fonts/SVN-Nexa\ Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.statisticsContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ffffff;
+  color: #111111;
+  padding-top: 77px;
+  padding-bottom: 107px;
+  padding-right: 250px;
+  padding-left: 250px;
+}
+
+.statisticsContents {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.statisticsContent {
+  display: flex;
+  align-items: center;
+}
+
+.imgStatistics img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0fc8a9;
+  border-radius: 50%;
+  margin-right: 20px;
+  width: 97px;
+  height: auto;
+}
+
+.cardStatistics {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cardStatistics .count {
+  margin: 0;
+}
+
+.cardStatistics .plusSignStatistics {
+  margin-left: 4px;
+}
+
+.cardStatistics p {
+  font-family: "SVN-Nexa", sans-serif;
+  font-size: 22px;
+  margin: 0;
+}
+
+.countZoom {
+  display: inline-block;
+  font-family: "SVN-Nexa", sans-serif;
+  font-size: 31px;
+  color: #0fc8a9;
+  animation: zoomIn 2s ease-in-out;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.statisticsContents {
+  opacity: 0;
+  animation-duration: 2s;
+}
+
+.animate__fadeInUp {
+  opacity: 1;
+  animation-name: animate__fadeInUp;
+}
+
+@keyframes animate__fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (min-width: 1400px) {
+  .statisticsContainer {
+    padding-right: 161px;
+    padding-left: 161px;
+  }
+
+  .statisticsContents {
+    gap: 12.4rem;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .statisticsContainer {
+    padding-right: 140px;
+    padding-left: 140px;
+  }
+
+  .statisticsContents {
+    gap: 8.2rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .statisticsContainer {
+    padding-right: 80px;
+    padding-left: 80px;
+  }
+
+  .statisticsContents {
+    gap: 5.3rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .StatisticsContainer {
+    padding-right: 130px;
+    padding-left: 130px;
+  }
+
+  .StatisticsContents {
+    gap: 5.8rem;
+  }
+
+  .CardStatistics {
+    gap: 0;
+  }
+
+  .ImgStatistics img {
+    margin: 0;
+  }
+
+  .StatisticsContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .ImgStatistics {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .StatisticsContainer {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+
+  .StatisticsContents {
+    gap: 4.5rem;
+  }
+
+  .CardStatistics {
+    gap: 0;
+  }
+
+  .StatisticsContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .ImgStatistics img {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .CardStatistics .count {
+    font-size: 29px;
+  }
+
+  .CardStatistics p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .StatisticsContainer {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .StatisticsContents {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+  }
+
+  .CardStatistics {
+    gap: 0;
+  }
+
+  .StatisticsContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 99px;
+    height: 160px;
+  }
+
+  .ImgStatistics img {
+    width: 80px;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .CardStatistics .count {
+    font-size: 29px;
+  }
+
+  .CardStatistics p {
+    font-size: 18px;
+  }
+}

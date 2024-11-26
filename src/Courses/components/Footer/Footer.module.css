@@ -1,0 +1,137 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Roboto&display=swap');
+
+/* Define custom font-face */
+@font-face {
+  font-family: 'SVN-Nexa';
+  src: url('/src//Courses//Assets/fonts/SVN-Nexa\ Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Footer container styling */
+.coursesFooter {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 80px;
+    background-color: #000;
+    width: 100%;
+    height: 272px;
+}
+
+/* Logo image styling */
+.coursesFooter .coursesContainerLogoFooter .coursesImgLogo {
+    width: 260px;
+    height: 72px;
+    margin-bottom: 1rem;
+}
+
+/* Logo text styling */
+.coursesFooter .coursesContainerLogoFooter .coursesContentLogo {
+    font-family: 'SVN-Nexa', sans-serif;
+    color: #fff;
+    font-size: 22px;
+    width: 300px;
+}
+
+/* Footer section titles styling */
+.coursesFooter .coursesContainerContentFooter .coursesTitleFooter {
+    font-size: 22px;
+    font-family: 'SVN-Nexa', sans-serif;
+    color: #bbd2c7;
+    margin-bottom: 1.5rem;
+}
+
+/* Footer list and item styling */
+.coursesFooter .coursesContainerContentFooter .coursesContainerContentTitleFooter .platformContentTitleFooter,
+.coursesFooter .coursesContainerContentFooter .coursesContentTitleFooter {
+    font-size: 16px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 0.5rem;
+}
+
+/* Remove list style and reset padding and margin */
+.coursesContainerContentTitleFooter,
+.coursesContainerContentFooter {
+    list-style-type: none;
+    padding: 0; 
+    margin: 0;  
+}
+
+/* Responsive design */
+@media (min-width: 1400px) {
+    .coursesFooter {
+      padding: 40px 80px;
+    }
+} 
+  
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    .coursesFooter {
+      padding: 40px 80px;
+    }
+}   
+  
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .coursesFooter {
+      padding: 40px 40px;
+    }
+} 
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .coursesFooter {
+      flex-wrap: wrap;
+      height: auto;
+      padding: 40px 40px;
+    }
+  
+    .coursesContainerLogoFooter {
+      margin-bottom: 20px;
+    }
+  
+    .coursesFooter .coursesContainerContentFooter {
+      width: 48%;
+    } 
+} 
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .coursesFooter {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 40px 40px;
+  }
+
+  .coursesContainerLogoFooter {
+    margin-bottom: 20px;
+  }
+
+  .coursesFooter .coursesContainerContentFooter {
+    width: 38%;
+  } 
+} 
+
+@media (max-width: 575.98px) {
+  .coursesFooter {
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: center;
+    padding: 40px 40px;
+  }
+
+  .coursesContainerLogoFooter {
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .coursesFooter .coursesContainerContentFooter {
+    margin-top: 1rem;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  } 
+} 

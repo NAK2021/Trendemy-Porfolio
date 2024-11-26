@@ -1,0 +1,163 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Roboto&display=swap');
+
+/* Define custom font-face */
+@font-face {
+  font-family: 'SVN-Nexa';
+  src: url('/src/Platform/Assets/fonts/SVN-Nexa\ Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Footer container styling */
+.platformFooter {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 44.5px;
+    padding-right: 80px;
+    padding-left: 80px;
+    padding-bottom: 0;
+    background-color: #151c1b;
+    width: 100%;
+    height: 272px;
+}
+
+/* Logo image styling */
+.platformFooter .platformContainerLogoFooter .platformImgLogo {
+    width: 260px;
+    height: 72px;
+    margin-bottom: 1.55rem;
+}
+
+/* Logo text styling */
+.platformFooter .platformContainerLogoFooter .platformContentLogo {
+    font-family: 'SVN-Nexa', sans-serif;
+    color: #fff;
+    font-size: 22px;
+    width: 300px;
+}
+
+/* Footer section titles styling */
+.platformFooter .platformContainerContentFooter .platformTitleFooter {
+    font-size: 22px;
+    font-family: 'SVN-Nexa', sans-serif;
+    color: #bbd2c7;
+    margin-bottom: 1.1rem;
+}
+
+/* Footer list and item styling */
+.platformFooter .platformContainerContentFooter .platformContainerContentTitleFooter .platformContentTitleFooter,
+.platformFooter .platformContainerContentFooter .platformContentTitleFooter {
+    font-size: 16px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 0.3rem;
+}
+
+/* Remove list style and reset padding and margin */
+.platformContainerContentTitleFooter,
+.platformContainerContentFooter {
+    list-style-type: none;
+    padding: 0; 
+    margin: 0;  
+}
+
+/* Responsive design */
+@media (min-width: 1400px) {
+    /* Footer container */
+   
+} 
+  
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    /* Footer container */
+    .platformFooter {
+      height: auto;
+    }
+}   
+  
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /* Footer container */
+    .platformFooter {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+} 
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* Footer container */
+    .platformFooter {
+      flex-wrap: wrap;
+      height: auto;
+      padding: 40px 40px;
+    }
+  
+    /* Footer logo container */
+    .platformContainerLogoFooter {
+      margin-bottom: 20px;
+    }
+  
+    /* Footer content container */
+    .platformFooter .platformContainerContentFooter {
+      width: 48%;
+    } 
+} 
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* Footer container */
+  .platformFooter {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 40px 40px;
+  }
+
+  /* Footer logo container */
+  .platformContainerLogoFooter {
+    margin-bottom: 20px;
+  }
+
+  /* Footer content container */
+  .platformFooter .platformContainerContentFooter {
+    width: 38%;
+  } 
+} 
+
+@media (max-width: 575.98px) {
+  /* Footer container */
+  .platformFooter {
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: center;
+    padding: 10px 10px;
+  }
+
+  /* Footer logo container */
+  .platformContainerLogoFooter {
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .platformFooter .platformContainerLogoFooter .platformContentLogo {
+    display: flex;
+    text-align: center;
+  }
+
+  /* Footer content container */
+  .platformFooter .platformContainerContentFooter {
+    margin-top: 1rem;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  } 
+} 
+
+
+
+  
+ 
+  

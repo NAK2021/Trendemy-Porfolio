@@ -1,0 +1,141 @@
+/* Main mobile header container */
+.mobileHeaderPlatform {
+  height: 88px;
+  width: 100%; 
+  background-color: rgba(0, 0, 0, 0);
+  padding: 7px;
+  display: flex;
+  border-bottom: 1px solid #fff;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1001;
+  transition: background-color 0.3s ease;
+}
+
+.mobileHeaderPlatformScrolled {
+  background-color: #000;
+  border-bottom: none;
+}
+/* Logo image in the mobile header */
+.mobileHeaderPlatformLogo img {
+  width: 200px;
+  height: auto;
+  max-height: 56px;
+  margin-left: 13px;
+  cursor: pointer;
+}
+
+/* Navigation container in the mobile header */
+.mobileHeaderPlatformNav {
+  display: flex;
+  align-items: center;
+}
+
+/* Menu icon in the mobile header */
+.mobileHeaderPlatformMenu {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  z-index: 1; 
+  margin-right: 10px;
+}
+
+/* Style for the menu icon */
+.mobileHeaderPlatformIconMenu {
+  font-size: 28px;
+  color: #fff;
+}
+
+/* Menu container that slides in from the right */
+.mobileHeaderPlatformMenuContainer {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  height: 100%;
+  width: 250px;
+  background-color: #fff;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: right 0.3s ease;
+  z-index: 2; 
+}
+
+/* Class to open the menu container */
+.mobileHeaderPlatformMenuContainer.open {
+  right: 0;
+}
+
+/* Close icon in the menu container */
+.mobileHeaderPlatformIconMenuClose {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+/* Menu list in the container */
+.mobileHeaderPlatformMenuContainer ul {
+  list-style: none;
+  padding: 90px 20px;
+  margin: 0;
+}
+
+.mobileHeaderPlatformMenuContainer ul li {
+  margin-bottom: 10px;
+ }
+
+/* Links in the menu list */
+.mobileHeaderPlatformMenuContainer ul li a{
+ text-decoration: none;
+ font-size: 18px;
+ padding: 0;
+ color: #000;
+}
+
+/* Active menu item */
+.mobileHeaderPlatformMenuContainer ul li .mobileHeaderPlatformMenuItem{
+  color: #0fc8a9;
+}
+
+/* Register button in the mobile header */
+.mobileHeaderPlatformBtnRegister {
+  position: relative;
+  background-color: #000;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  border: none;
+  height: 35px;
+  width: 110px;
+  border-radius:  5px;
+  cursor: pointer;
+  transition: color .7s ease-in-out, background-color .5s ease-in-out; 
+  overflow: hidden;
+  z-index: 999;
+}
+
+/* Hover effect for the register button */
+.mobileHeaderPlatformBtnRegister::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0fc8a9;
+  color: #000;
+  z-index: -1; 
+  transition: transform .5s ease-in-out;
+  transform: scaleX(0); 
+  transform-origin: left;
+}
+
+.mobileHeaderPlatformBtnRegister:hover::before {
+  transform: scaleX(1); 
+}
+
+

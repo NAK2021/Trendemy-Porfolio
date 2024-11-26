@@ -1,0 +1,157 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Roboto&display=swap');
+ 
+/* Importing custom font SVN-Nexa */
+@font-face {
+    font-family: 'SVN-Nexa';
+    src: url('/src/Platform/Assets/fonts/SVN-Nexa\ Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+} 
+
+.feedbackStudentContainer {
+    padding-top: 68px;
+    padding-right: 240px;
+    padding-bottom: 0;
+    padding-left: 240px;
+    width: 100%;
+    background-color: #fdfeeb;
+}
+
+.feedbackStudentContainer .feedbackStudentAnimation .feedbackStudentTitleOne {
+    font-family: 'SVN-Nexa', sans-serif;
+    font-size: 22px;
+    color: #0fc8a9;
+    text-align: center;
+}
+
+.feedbackStudentContainer .feedbackStudentAnimation .feedbackStudentTitleTwo {
+    font-family: 'SVN-Nexa', sans-serif;
+    font-size: 31px;
+    text-align: center;
+    color: #000;
+}
+
+.feedbackStudentContainer .feedbackStudentAnimation .feedbackStudentContainerContent {
+    display: flex;
+}
+
+.feedbackStudentContainer .feedbackStudentAnimation .feedbackStudentContainerContent .feedbackStudentImg {
+    width: 34%;
+    height: 34%;
+    margin-bottom: 32px;
+}
+
+.feedbackStudentContainer .feedbackStudentAnimation .feedbackStudentContainerContent .feedbackStudentContainerBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 80px;
+    margin-left: 28px;
+    margin-bottom: 40px;
+}
+
+.feedbackStudentContainer .feedbackStudentAnimation .feedbackStudentContainerContent .feedbackStudentContainerBox .feedbackStudentBoxA,
+.feedbackStudentContainer .feedbackStudentAnimation .feedbackStudentContainerContent .feedbackStudentContainerBox .feedbackStudentBoxB,
+.feedbackStudentContainer .feedbackStudentAnimation .feedbackStudentContainerContent .feedbackStudentContainerBox .feedbackStudentBoxC,
+.feedbackStudentContainer .feedbackStudentAnimation .feedbackStudentContainerContent .feedbackStudentContainerBox .feedbackStudentBoxD {
+    width: 48.5%;
+    height: 215px;
+    border: 2px solid #bdbdbd;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.feedbackStudentContainer .feedbackStudentAnimation .feedbackStudentContainerContent .feedbackStudentContainerBox .feedbackStudentBoxA .feedbackStudentText,
+.feedbackStudentContainer .feedbackStudentAnimation .feedbackStudentContainerContent .feedbackStudentContainerBox .feedbackStudentBoxB .feedbackStudentText,
+.feedbackStudentContainer .feedbackStudentAnimation .feedbackStudentContainerContent .feedbackStudentContainerBox .feedbackStudentBoxC .feedbackStudentText,
+.feedbackStudentContainer .feedbackStudentAnimation .feedbackStudentContainerContent .feedbackStudentContainerBox .feedbackStudentBoxD .feedbackStudentText {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.feedbackStudentContainer .feedbackStudentAnimation .feedbackStudentContainerContent .feedbackStudentContainerBox .feedbackStudentBoxA .feedbackStudentInfo,
+.feedbackStudentContainer .feedbackStudentAnimation .feedbackStudentContainerContent .feedbackStudentContainerBox .feedbackStudentBoxB .feedbackStudentInfo,
+.feedbackStudentContainer .feedbackStudentAnimation .feedbackStudentContainerContent .feedbackStudentContainerBox .feedbackStudentBoxC .feedbackStudentInfo,
+.feedbackStudentContainer .feedbackStudentAnimation .feedbackStudentContainerContent .feedbackStudentContainerBox .feedbackStudentBoxD .feedbackStudentInfo {
+    display: flex;
+    align-items: center;
+}
+
+.feedbackStudentContainer .feedbackStudentAnimation .feedbackStudentContainerContent .feedbackStudentContainerBox .feedbackStudentBoxA .feedbackStudentAvatarStudent,
+.feedbackStudentContainer .feedbackStudentAnimation .feedbackStudentContainerContent .feedbackStudentContainerBox .feedbackStudentBoxB .feedbackStudentAvatarStudent,
+.feedbackStudentContainer .feedbackStudentAnimation .feedbackStudentContainerContent .feedbackStudentContainerBox .feedbackStudentBoxC .feedbackStudentAvatarStudent,
+.feedbackStudentContainer .feedbackStudentAnimation .feedbackStudentContainerContent .feedbackStudentContainerBox .feedbackStudentBoxD .feedbackStudentAvatarStudent {
+    width: 60px;
+} 
+
+.feedbackStudentContainer .feedbackStudentAnimation .feedbackStudentContainerContent .feedbackStudentContainerBox .feedbackStudentBoxA .feedbackStudentName,
+.feedbackStudentContainer .feedbackStudentAnimation .feedbackStudentContainerContent .feedbackStudentContainerBox .feedbackStudentBoxB .feedbackStudentName,
+.feedbackStudentContainer .feedbackStudentAnimation .feedbackStudentContainerContent .feedbackStudentContainerBox .feedbackStudentBoxC .feedbackStudentName,
+.feedbackStudentContainer .feedbackStudentAnimation .feedbackStudentContainerContent .feedbackStudentContainerBox .feedbackStudentBoxD .feedbackStudentName {
+    font-family: 'SVN-Nexa', sans-serif;
+    font-size: 18px;
+    color: #000;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+
+/* Animation classes for the content and image */
+.feedbackStudentAnimation {
+    opacity: 0;
+    animation-duration: 2s;
+}
+  
+/* Fade in up animation */
+.animate__fadeInUp {
+    opacity: 1;
+    animation-name: animate__fadeInUp;
+}
+
+@media (min-width: 1400px) {
+    .feedbackStudentContainer {
+        padding-right: 221px;
+        padding-left: 221px;
+        height: auto;
+    }
+
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    .feedbackStudentContainer {
+        padding-right: 120px;
+        padding-left: 120px;
+        height: auto;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .feedbackStudentContainer {
+        padding-right: 80px;
+        padding-left: 80px;
+        height: auto;
+    }
+
+    .feedbackStudentContainer .feedbackStudentAnimation .feedbackStudentContainerContent .feedbackStudentContainerBox {
+        row-gap: 10px;
+    }
+
+    .feedbackStudentContainer .feedbackStudentAnimation .feedbackStudentContainerContent .feedbackStudentContainerBox .feedbackStudentBoxA .feedbackStudentText,
+    .feedbackStudentContainer .feedbackStudentAnimation .feedbackStudentContainerContent .feedbackStudentContainerBox .feedbackStudentBoxB .feedbackStudentText,
+    .feedbackStudentContainer .feedbackStudentAnimation .feedbackStudentContainerContent .feedbackStudentContainerBox .feedbackStudentBoxC .feedbackStudentText,
+    .feedbackStudentContainer .feedbackStudentAnimation .feedbackStudentContainerContent .feedbackStudentContainerBox .feedbackStudentBoxD .feedbackStudentText {
+        max-height: 5em;
+        overflow: hidden;
+    }
+
+    .feedbackStudentContainer .feedbackStudentAnimation .feedbackStudentContainerContent .feedbackStudentContainerBox .feedbackStudentBoxA .feedbackStudentName,
+    .feedbackStudentContainer .feedbackStudentAnimation .feedbackStudentContainerContent .feedbackStudentContainerBox .feedbackStudentBoxB .feedbackStudentName,
+    .feedbackStudentContainer .feedbackStudentAnimation .feedbackStudentContainerContent .feedbackStudentContainerBox .feedbackStudentBoxC .feedbackStudentName,
+    .feedbackStudentContainer .feedbackStudentAnimation .feedbackStudentContainerContent .feedbackStudentContainerBox .feedbackStudentBoxD .feedbackStudentName {
+        font-size: 17px;
+    }
+}

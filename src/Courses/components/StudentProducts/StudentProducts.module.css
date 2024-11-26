@@ -1,0 +1,178 @@
+@font-face {
+  font-family: "SVN-Nexa";
+  src: url("/src/Platform/Assets/fonts/SVN-Nexa\ Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.containerStudentProducts {
+  padding-top: 65px;
+  padding-right: 240px;
+  padding-bottom: 100px;
+  padding-left: 240px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.titleContentsStudentProducts {
+  font-family: "SVN-Nexa", sans-serif;
+  font-size: 31px;
+  color: #000000;
+  margin-bottom: 50px;
+}
+
+.mySwiper {
+  width: 100%;
+  height: auto;
+}
+
+.imageStudentProduct {
+  width: 807px;
+  height: 500px;
+  border: 3px solid #0fc8a9;
+}
+
+.swiperContainer {
+  display: flex;
+  align-items: center;
+}
+
+.prevButton,
+.nextButton {
+  background: #0fc8a9;
+  border: 2px solid #0fc8a9;
+  color: #ffffff;
+  width: 55px;
+  height: 50px;
+  /* text-decoration: none; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.prevButton {
+  margin-right: 10px;
+}
+
+.nextButton {
+  margin-left: 10px;
+}
+
+.prevButton:hover,
+.nextButton:hover {
+  background-color: #ffffff;
+  border-color: #0fc8a9;
+  color: #0fc8a9;
+}
+
+/* The animation fades up */
+.titleContentsStudentProducts,
+.swiperContainer {
+  opacity: 0;
+  animation-duration: 2s;
+}
+
+.animate__fadeInUp {
+  opacity: 1;
+  animation-name: animate__fadeInUp;
+}
+
+@keyframes animate__fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Media Queries */
+
+@media (min-width: 1400px) {
+  .containerStudentProducts {
+    padding-right: 221px;
+    padding-left: 221px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .containerStudentProducts {
+    padding-right: 140px;
+    padding-left: 140px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .containerStudentProducts {
+    padding-right: 80px;
+    padding-left: 80px;
+  }
+
+  .imageStudentProduct {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .ContainerStudentProducts {
+    padding-right: 130px;
+    padding-left: 130px;
+  }
+
+  .ImageStudentProduct {
+    width: 100%;
+    height: auto;
+  }
+
+  .PrevButton,
+  .NextButton {
+    width: 46px;
+    height: 40px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .ContainerStudentProducts {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+
+  .ImageStudentProduct {
+    width: 100%;
+    height: auto;
+  }
+
+  .PrevButton,
+  .NextButton {
+    display: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .ContainerStudentProducts {
+    padding-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .ImageStudentProduct {
+    width: 90%;
+    height: auto;
+  }
+
+  .PrevButton,
+  .NextButton {
+    display: none;
+  }
+}

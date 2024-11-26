@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+/* Import custom font */
+@font-face {
+  font-family: 'SVN-Nexa';
+  src: url('/src/Platform/Assets/fonts/SVN-Nexa\ Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Main container styling */
+.trendemyVisionSectioncontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 70px;
+  padding-right: 250px;
+  padding-bottom: 100px;
+  padding-left: 250px;
+  max-width: 100%;
+  background-color: #FFFFFF;
+}
+
+/* Content wrapper styling */
+.trendemyVisionSectioncontent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Text content styling */
+.trendemyVisionSectiontextContent {
+  flex: 1;
+  text-align: left;
+}
+
+.trendemyVisionSectiontextContent h1 {
+  font-size: 54px;
+  font-family: 'SVN-Nexa', sans-serif;
+  color: #00bfa5;
+  margin-bottom: 10px;
+}
+
+.trendemyVisionSectiontextContent h2 {
+  font-size: 22px;
+  font-family: 'SVN-Nexa', sans-serif;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.trendemyVisionSectiontextContent p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #000;
+  text-align: justify;
+  width: 100%;
+}
+
+/* Image container styling */
+.trendemyVisionSectionimageContainer {
+  flex: 1;
+  display: flex;
+  justify-content: right;
+  padding: 0;
+  position: relative;
+}
+
+.trendemyVisionSectionimage {
+  width: 366.25px;
+  height: 403.76px;
+  padding: 0;
+  position: relative;
+}
+
+/* Responsive Styles */
+
+/* Extra extra large screens (min-width: 1400px) */
+@media (min-width: 1400px) {
+  .trendemyEduSectioncontainer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-right: 220px;
+    padding-left: 220px;
+  }
+}
+
+/* Extra large screens (min-width: 1200px) and (max-width: 1399.98px) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .trendemyVisionSectioncontainer {
+    padding-top: 190px;
+    padding-right: 160px;
+    padding-bottom: 100px;
+    padding-left: 160px;
+  }
+
+  .trendemyVisionSectiontextContent p {
+    width: 100%;
+  }
+
+  .trendemyVisionSectionimage {
+    width: 366.25px;
+    height: 408.35px;
+  }
+}
+
+/* Large screens (min-width: 992px) and (max-width: 1199.98px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .trendemyVisionSectioncontainer {
+    padding-top: 190px;
+    padding-right: 80px;
+    padding-bottom: 100px;
+    padding-left: 80px;
+  }
+  
+  .trendemyVisionSectiontextContent h2 {
+    white-space: nowrap;
+  }
+
+  .trendemyVisionSectionimage {
+    width: 316.25px;
+    height: 358.35px;
+  }
+}
+
+/* Medium screens (min-width: 768px) and (max-width: 991.98px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .trendemyVisionSectioncontainer {
+    flex-direction: column;
+    padding-top: 100px;
+    padding-right: 200px;
+    padding-bottom: 100px;
+    padding-left: 200px;
+    text-align: center;
+    background-image: none;
+  }
+
+  .trendemyVisionSectioncontent {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: auto;
+  }
+
+  .trendemyVisionSectiontextContent {
+    max-width: 100%;
+    margin: -50px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .trendemyVisionSectiontextContent h1 {
+    font-size: 44px;
+  }
+
+  .trendemyVisionSectiontextContent p {
+    text-align: justify;
+    margin: 0;
+  }
+
+  .trendemyVisionSectionimageContainer {
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .trendemyVisionSectionimage {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/* Small screens (min-width: 576px) and (max-width: 767.98px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .trendemyVisionSectioncontainer {
+    padding-right: 150px;
+    padding-bottom: 100px;
+    padding-left: 150px;
+    text-align: center;
+    background-image: none;
+  }
+
+  .trendemyVisionSectioncontent {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: auto;
+  }
+
+  .trendemyVisionSectiontextContent {
+    max-width: 100%;
+    margin: -50px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .trendemyVisionSectionimage {
+    width: 100%;
+  }
+}
+
+/* Extra small screens (max-width: 575.98px) */
+@media (max-width: 575.98px) {
+  .trendemyVisionSectioncontainer {
+    padding-right: 0px;
+    padding-bottom: 100px;
+    padding-left: 0px;
+    text-align: center;
+    background-image: none;
+  }
+
+  .trendemyVisionSectioncontent {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: auto;
+  }
+
+  .trendemyVisionSectiontextContent {
+    max-width: 80%;
+    margin: -50px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .trendemyVisionSectionimageContainer {
+    justify-content: center;
+  }
+
+  .trendemyVisionSectionimage {
+    width: 70%;
+  }
+}

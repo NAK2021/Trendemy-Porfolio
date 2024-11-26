@@ -1,0 +1,287 @@
+@font-face {
+  font-family: "SVN-Nexa";
+  src: url("/src/Platform/Assets/fonts/SVN-Nexa\ Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.missionPlatformContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  padding-top: 20px;
+  padding-bottom: 107px;
+  padding-right: 250px;
+  padding-left: 250px;
+}
+
+.missionPlatformImg,
+.missionPlatformContents {
+  flex: 1;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.missionPlatformImg {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.imgPlatform {
+  width: 431px;
+  height: auto;
+}
+
+.imgPlatform img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.missionPlatformContents {
+  width: 100%;
+}
+
+.titleOnePlatform {
+  font-family: "SVN-Nexa", sans-serif;
+  color: #0fc8a9;
+  font-size: 44px;
+  margin-bottom: 22px;
+}
+
+.titleTwoPlatform {
+  font-family: "SVN-Nexa", sans-serif;
+  color: #000000;
+  font-size: 22px;
+  margin: 0;
+}
+
+.contentPlatform {
+  font-family: "Roboto", sans-serif;
+  color: #111111;
+  font-size: 16px;
+  text-align: justify;
+  width: 537px;
+  margin-bottom: 18px;
+}
+
+/* The animation fades up */
+.missionPlatformImg,
+.missionPlatformContents {
+  opacity: 0;
+  animation-duration: 2s;
+}
+
+.animate__fadeInUp {
+  opacity: 1;
+  animation-name: animate__fadeInUp;
+}
+
+@keyframes animate__fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Media Queries */
+
+@media (min-width: 1400px) {
+  .missionPlatformContainer {
+    padding-right: 221px;
+    padding-left: 221px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .missionPlatformContainer {
+    padding-right: 140px;
+    padding-left: 140px;
+  }
+
+  .missionPlatformImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .missionPlatformImg .ImgPlatform {
+    max-width: 80%;
+    height: auto;
+  }
+
+  .missionPlatformContents {
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .missionPlatformContainer {
+    padding-right: 80px;
+    padding-left: 80px;
+  }
+
+  .missionPlatformImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .missionPlatformImg .ImgPlatform {
+    max-width: 90%;
+    height: auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .MissionPlatformContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-right: 130px;
+    padding-left: 130px;
+  }
+
+  .MissionPlatformImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .MissionPlatformImg .ImgPlatform {
+    width: 65%;
+    height: auto;
+    margin-bottom: 70px;
+  }
+
+  .MissionPlatformContents {
+    width: 90%;
+  }
+
+  .ContentPlatform {
+    width: 100%;
+  }
+
+  .CirclePlatform1 {
+    top: -640px;
+    right: -310px;
+  }
+
+  .CirclePlatform2 {
+    bottom: 300px;
+    right: 250px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .MissionPlatformContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+
+  .MissionPlatformImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .MissionPlatformImg .ImgPlatform {
+    height: auto;
+    margin-bottom: 70px;
+  }
+
+  .MissionPlatformContents {
+    width: 90%;
+  }
+
+  .ContentPlatform {
+    width: 100%;
+  }
+
+  .CirclePlatform1 {
+    top: -670px;
+    right: -250px;
+  }
+
+  .CirclePlatform2 {
+    bottom: 350px;
+    right: 190px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .MissionPlatformContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 65px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .MissionPlatformImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .MissionPlatformImg .ImgPlatform {
+    width: 75%;
+    height: 75%;
+    margin-bottom: 70px;
+  }
+
+  .MissionPlatformContents {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .TitleOnePlatform {
+    font-size: 48px;
+  }
+
+  .TitleTwoPlatform {
+    width: 70%;
+  }
+
+  .MissionPlatformContents .ContentPlatform {
+    width: 70%;
+  }
+
+  /* .MissionPlatformImg {
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    animation-duration: 2s;
+  } */
+
+  .CirclePlatform1,
+  .CirclePlatform2 {
+    display: none;
+  }
+}

@@ -1,0 +1,313 @@
+/* Importing fonts from Google Fonts and locally */
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Roboto&display=swap');
+@font-face {
+    font-family: 'SVN-Nexa';
+    src: url('/src/Platform/Assets/fonts/SVN-Nexa\ Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.feedbackSectionPlatform {
+    padding-top: 27px;
+    padding-left: 200px;
+    padding-bottom: 0;
+    padding-right: 200px;
+    background-color: #fdfeeb;
+    width: 100%;
+    height: 76.6vh;
+    display: flex;
+    justify-content: center;
+}
+
+.feedbackSectionPlatformContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.feedbackSectionPlatformContainer .iconBlueCircle {
+    width: 127px;
+    position: absolute;
+    left: -209px;
+    top: 30px;
+}
+
+.feedbackSectionPlatformContainer .iconRedCircle {
+    width: 164px;
+    position: absolute;
+    right: -170px;
+    bottom: 26px;
+}
+
+.feedbackSectionPlatformContainer .feedbackSectionPlatformTitleFirst {
+    color: #0fc8a9;
+    font-family: 'SVN-Nexa', sans-serif;
+    font-size: 22px;
+}
+
+.feedbackSectionPlatformContainer .feedbackSectionPlatformTitleSecond {
+    color: #000;
+    font-family: 'SVN-Nexa', sans-serif;
+    font-size: 31px;
+    margin-top: -4px;
+    margin-bottom: -6.5px;
+}
+
+.feedbackSectionPlatformContainer .feedbackSectionPlatformContainerFeedback {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.feedbackSectionPlatformContainer .feedbackSectionPlatformContainerFeedback .feedbackSectionContainerImg {
+    margin-right: 33px;
+    margin-bottom: 55px;
+}
+
+.feedbackSectionPlatformContainer .feedbackSectionPlatformContainerFeedback .feedbackSectionContainerImg .feedbackSectionPlatformImg {
+    width: 388px;
+}
+
+.feedbackSectionPlatfromContainerSwiper {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.feedbackSectionPlatformCard {
+    background-color: rgba(0, 0, 0, 0);
+    width: 493px;
+    height: 300px;
+    padding-top: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.feedbackSectionPlatformContainerInfoUser {
+    display: flex;
+    flex-direction: row;
+    margin-top: 23.5px;
+    margin-bottom: 10px;
+}
+
+.feedbackSectionPlatformImgUser {
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+}
+
+.feedbackSectionPlatform .feedbackSectionPlatformContainer .feedbackSectionPlatformContainerFeedback .feedbackSectionPlatfromContainerSwiper .feedbackSectionPlatformCard .feedbackSectionPlatformContainerInfoUser .feedbackSectionPlatformContainerInfoUser {
+    display: flex;
+    flex-direction: column;
+}
+
+.feedbackSectionPlatformNameUser,
+.feedbackSectionPlatformPositionUser {
+    color: #000; 
+    font-family: 'SVN-Nexa', sans-serif;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.feedbackSectionPlatformNameUser {
+    margin-top: -5px;
+    margin-bottom: 10px;
+}
+
+.feedbackSectionPlatformPositionUser {
+    color: #0fc8a9;
+}
+
+.feedbackSectionPlatformContent {
+    color: #000;
+    width: 485px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+}
+
+.feedbackSectionPlatformVector {
+    position: absolute;
+    margin-left: 420px;
+    margin-top: 100px;
+}
+
+/* Customize the dots pagination */
+:global(.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet),
+:global(.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet) {
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 4px) !important;
+  width: 15px !important;
+  height: 15px !important;
+  background-color: #979595 ; 
+}
+
+:global(.swiper-pagination-bullet-active) {
+  background-color: #058d5a !important; 
+}
+
+@media (min-width: 1400px) {
+    .feedbackSectionPlatform {
+        padding-left: 200px;
+        padding-right: 200px;
+        height: auto;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    .feedbackSectionPlatform {
+        padding-left: 150px;
+        padding-right: 150px;
+        height: auto;
+    }
+
+    .feedbackSectionPlatformContainer .feedbackSectionPlatformContainerFeedback .feedbackSectionContainerImg {
+       width: 90%;
+       margin-right: 0;
+    }
+    
+    .feedbackSectionPlatfromContainerSwiper {
+        width: 100%;
+    }
+
+    .feedbackSectionPlatformContent {
+        width: 90%;
+    }
+
+    .feedbackSectionPlatformVector {
+        margin-left: 80%;
+    }
+
+    .feedbackSectionPlatformContainer .iconBlueCircle {
+        width: 120px;
+        left: -130px;
+    }
+
+    .feedbackSectionPlatformContainer .iconRedCircle {
+        width: 150px;
+        right: -130px;
+        bottom: 0;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .feedbackSectionPlatform {
+        padding-left: 80px;
+        padding-right: 80px;
+        height: auto;
+    }
+
+    .feedbackSectionPlatformContainer .feedbackSectionPlatformContainerFeedback .feedbackSectionContainerImg {
+       width: 60%;
+       margin-right: 0;
+    }
+    
+    .feedbackSectionPlatfromContainerSwiper {
+        width: 68%;
+    }
+
+    .feedbackSectionPlatformContent {
+        width: 87%;
+    }
+
+    .feedbackSectionPlatformVector {
+        margin-left: 80%;
+    }
+
+    .feedbackSectionPlatformContainer .iconBlueCircle {
+        width: 110px;
+        left: -130px;
+    }
+
+    .feedbackSectionPlatformContainer .iconRedCircle {
+        width: 130px;
+        right: -130px;
+        bottom: 0;
+    }
+}
+
+/* @media (min-width: 768px) and (max-width: 991.98px) {
+    
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+}
+
+@media (max-width: 575.98px) {
+    .feedbackSectionPlatform {
+        padding-left: 10px;
+        padding-right: 10px;
+        height: auto;
+    }
+
+    .feedbackSectionPlatformContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .feedbackSectionPlatformContainer .feedbackSectionPlatformTitleSecond {
+        width: 90%;
+        text-align: center;
+    }
+
+    .feedbackSectionPlatformContainer .feedbackSectionPlatformContainerFeedback {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .feedbackSectionPlatformContainer .feedbackSectionPlatformContainerFeedback .feedbackSectionContainerImg {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .feedbackSectionPlatformContainer .feedbackSectionPlatformContainerFeedback .feedbackSectionContainerImg .feedbackSectionPlatformImg {
+        width: 100%;
+        height: 100%;
+        margin-left: 10%;
+    }
+
+    .feedbackSectionPlatfromContainerSwiper {
+        width: 90%;
+    }
+    
+    .feedbackSectionPlatformCard {
+        width: 97%;
+        max-height: 500px;
+        height: 100%;
+        margin-bottom: 60px;
+    }
+
+    .feedbackSectionPlatformContent {
+        color: #fff;
+        width: 95%;
+    }
+
+    .feedbackSectionPlatformVector {
+        display: none;
+    }
+
+    :global(.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet),
+    :global(.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet) {
+        margin-bottom: 40px !important;
+    }
+} */
+
+
+
+
+

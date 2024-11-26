@@ -1,0 +1,166 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Roboto&display=swap');
+ 
+/* Importing custom font SVN-Nexa */
+@font-face {
+    font-family: 'SVN-Nexa';
+    src: url('/src/Platform/Assets/fonts/SVN-Nexa\ Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+} 
+
+/* Main container for lecturer courses */
+.lecturerCoursesContainer {
+    padding-top: 68px;
+    padding-right: 240px;
+    padding-bottom: 0;
+    padding-left: 240px;
+    width: 100%;
+    background-color: #fdfeeb;
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+}
+
+.lecturerCoursesIconStarFirst,
+.lecturerCoursesIconStarSecond {
+    position: absolute;
+}
+
+.lecturerCoursesIconStarFirst {
+    width: 90px;
+    margin-top: -12px;
+    margin-left: -10%;
+}
+
+.lecturerCoursesIconStarSecond {
+    width: 70px;
+    margin-left: 100%;
+    margin-top: -150px;
+}
+
+.lecturerCoursesTitle {
+    font-family: 'SVN-Nexa', sans-serif;
+    font-size: 31px;
+    text-align: center;
+}
+
+.lecturerCoursesTeacher {
+    text-align: center;
+    margin-top: 65px;
+}
+
+.lecturerCoursesTeacher .lecturerCoursesTeacherOne,
+.lecturerCoursesTeacher .lecturerCoursesTeacherTwo {
+    display: flex;
+    text-align: left;
+}
+
+.lecturerCoursesTeacher .lecturerCoursesTeacherTwo {
+    margin-top: 93px;
+    margin-bottom: 93px;
+}
+
+.lecturerCoursesTeacher .lecturerCoursesTeacherOne .Avatar,
+.lecturerCoursesTeacher .lecturerCoursesTeacherTwo .Avatar {
+    width: 45%;
+    height: 45%;
+}
+
+.lecturerCoursesTeacher .lecturerCoursesTeacherOne .lecturerCoursesInfo {
+    margin-left: 66px;
+}
+
+.lecturerCoursesTeacher .lecturerCoursesTeacherTwo .lecturerCoursesInfo {
+    margin-right: 66px;
+}
+
+.lecturerCoursesTeacher .lecturerCoursesTeacherOne .lecturerCoursesInfo .name,
+.lecturerCoursesTeacher .lecturerCoursesTeacherTwo .lecturerCoursesInfo .name {
+    font-family: 'SVN-Nexa', sans-serif;
+    font-size: 22px;
+    color: #0eb69a;
+    margin-top: 35px;
+}
+
+.lecturerCoursesTeacher .lecturerCoursesTeacherOne .lecturerCoursesInfo .descriptionExperiences,
+.lecturerCoursesTeacher .lecturerCoursesTeacherTwo .lecturerCoursesInfo .descriptionExperiences {
+    display: flex;
+    margin-top: 18px;
+    margin-bottom: -15px;
+}
+
+.lecturerCoursesTeacher .lecturerCoursesTeacherOne .lecturerCoursesInfo .descriptionExperiences .imgAround,
+.lecturerCoursesTeacher .lecturerCoursesTeacherTwo .lecturerCoursesInfo .descriptionExperiences .imgAround {
+    width: 20px;
+    height: 20px;
+    margin-top: 4px;
+    margin-right: 10px;
+}
+
+.lecturerCoursesTeacher .lecturerCoursesTeacherOne .lecturerCoursesInfo .descriptionExperiences .text 
+.lecturerCoursesTeacher .lecturerCoursesTeacherTwo .lecturerCoursesInfo .descriptionExperiences .text { 
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #000;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.lecturerCoursesTeacher .line {
+    display: inline-block;
+    width: 95%;
+    border: 1px solid #0eb69a;
+    margin-top: 97px;
+}
+
+
+/* Animation classes for the content and image */
+.lecturerCoursesAnimation {
+    opacity: 0;
+    animation-duration: 2s;
+}
+  
+/* Fade in up animation */
+.animate__fadeInUp {
+    opacity: 1;
+    animation-name: animate__fadeInUp;
+}
+  
+@keyframes animate__fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+/* Responsive design */
+@media (min-width: 1400px) {
+    .lecturerCoursesContainer {
+        padding-right: 221px;
+        padding-left: 221px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px){
+    .lecturerCoursesContainer {
+        padding-right: 140px;
+        padding-left: 140px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px){
+    .lecturerCoursesContainer {
+        padding-right: 80px;
+        padding-left: 80px;
+    }
+}
+
+
+
+

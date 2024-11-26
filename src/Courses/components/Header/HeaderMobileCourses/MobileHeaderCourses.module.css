@@ -1,0 +1,243 @@
+/* Header container */
+.mobileHeaderCourses {
+  height: 68px;
+  width: 100%; 
+  background-color: #000;
+  padding: 7px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* Logo */
+.mobileHeaderCoursesLogo img {
+  width: 200px;
+  height: auto;
+  max-height: 56px;
+  cursor: pointer;
+}
+
+/* Main navigation */
+.mobileHeaderCoursesNav {
+  display: flex;
+  align-items: center;
+}
+
+/* Menu toggle button */
+.mobileHeaderCoursesMenu {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  z-index: 1; 
+  margin-right: 10px;
+}
+
+/* Icon in menu */
+.mobileHeaderCoursesIconMenu {
+  font-size: 28px;
+  color: #fff;
+}
+
+/* Container for mobile menu */
+.mobileHeaderCoursesMenuContainer {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  height: 100%;
+  width: 320px;
+  background-color: #fff;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: right 0.3s ease;
+  z-index: 2; 
+  overflow-x: hidden;
+}
+
+/* Display menu when open */
+.mobileHeaderCoursesMenuContainer.open {
+  right: 0;
+}
+
+/* Close menu icon */
+.mobileHeaderCoursesIconMenuClose {
+  position: absolute;
+  top: 4px;
+  left: 15px;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+/* Main menu list */
+.mobileHeaderCoursesMenuContainer .mobileHeaderCoursesContainerMenu {
+  list-style: none;
+  padding: 70px 20px;
+  margin: 0;
+}
+
+.mobileHeaderCoursesMenuContainer .mobileHeaderCoursesContainerMenu li {
+  margin-bottom: 10px;
+}
+
+/* Links in the main menu */
+.mobileHeaderCoursesMenuContainer .mobileHeaderCoursesContainerMenu li a {
+  text-decoration: none;
+  font-size: 18px;
+  padding: 0;
+  color: #000;
+}
+
+/* Color for active drop down menu icon and category */
+.mobileHeaderCoursesMenuContainer .mobileHeaderCoursesContainerMenu .mobileHeaderCoursesMenuItem.active .mobileHeaderCoursesCategory {
+    color: #0fc8a9;
+}
+
+/* Icon in drop down menu item */
+.mobileHeaderCoursesMenuContainer .mobileHeaderCoursesContainerMenu .mobileHeaderCoursesMenuItem .mobileHeaderCoursesIconMenu {
+  color: #000;
+  margin-top: 4px;
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+/* drop drown menu item */
+.mobileHeaderCoursesMenuContainer .mobileHeaderCoursesContainerMenu .mobileHeaderCoursesMenuItem {
+  display: flex;
+  align-items: center;
+}
+
+/* Dropdown menu container */
+.mobileHeaderCoursesMenuContainer .mobileHeaderCoursesContainerMenu li .mobileHeaderCoursesDropdownMenu {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+
+/* Container for dropdown links */
+.mobileHeaderCoursesMenuContainer .mobileHeaderCoursesContainerMenu li .mobileHeaderCoursesDropdownMenu .mobileHeaderCoursesDropdownLinkContainer {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* Dropdown links */
+.mobileHeaderCoursesMenuContainer .mobileHeaderCoursesContainerMenu li .mobileHeaderCoursesDropdownMenu .mobileHeaderCoursesDropdownLinkContainer .mobileHeaderCoursesDropdownLink {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* Dropdown sub menu arrow icon */
+.mobileHeaderCoursesMenuContainer .mobileHeaderCoursesContainerMenu li .mobileHeaderCoursesDropdownMenu .mobileHeaderCoursesDropdownLinkContainer .mobileHeaderCoursesDropdownLink .mobileHeaderCoursesIconArrow {
+  color: #000;
+}
+
+/* Change color of active dropdown link */
+.mobileHeaderCoursesMenuContainer .mobileHeaderCoursesContainerMenu li .mobileHeaderCoursesDropdownMenu .mobileHeaderCoursesDropdownLinkContainer .mobileHeaderCoursesDropdownLink.active {
+  color: #0fc8a9;
+}
+
+/* drop down submenu item */
+.mobileHeaderCoursesMenuContainer .mobileHeaderCoursesContainerMenu li .mobileHeaderCoursesDropdownMenu .mobileHeaderCoursesDropdownLinkContainer .mobileHeaderCoursesDropDownSubmenu .mobileHeaderCoursesDropDownSubmenuItem {
+  list-style: none;
+  margin: 0;
+  margin-top: 10px;
+}
+
+/* drop down submenu link */
+.mobileHeaderCoursesMenuContainer .mobileHeaderCoursesContainerMenu li .mobileHeaderCoursesDropdownMenu .mobileHeaderCoursesDropdownLinkContainer .mobileHeaderCoursesDropDownSubmenu .mobileHeaderCoursesDropDownSubmenuItem .mobileHeaderCoursesDropDownSubmenuLink {
+  font-size: 14px;
+}
+
+/* Active navigation link */
+.mobileHeaderCoursesMenuContainer .mobileHeaderCoursesContainerMenu .activeNavLink a{
+  color: #0fc8a9;
+}
+
+/* Submenu arrow icon */
+.mobileHeaderCoursesMenuContainer .mobileHeaderCoursesContainerMenu .activeNavLink a .mobileHeaderCoursesIconArrow{
+  color: #000;
+  font-size: 20px;
+  margin-left: 5px;
+  margin-top: -4px;
+}
+
+/* Submenu list */
+.mobileHeaderCoursesNav .mobileHeaderCoursesMenuContainer .mobileHeaderCoursesContainerMenu .activeNavLink .mobileHeaderCoursesSubMenu {
+    padding: 5px 10px;
+    list-style: none;
+}
+
+/* Submenu item */
+.mobileHeaderCoursesNav .mobileHeaderCoursesMenuContainer .mobileHeaderCoursesContainerMenu .activeNavLink .mobileHeaderCoursesSubMenu li  {
+    padding-top: 10px;
+}
+
+/* Active link in the submenu */
+.mobileHeaderCoursesNav .mobileHeaderCoursesMenuContainer .mobileHeaderCoursesContainerMenu .activeNavLink .mobileHeaderCoursesSubMenu li a.active {
+    color: #0fc8a9;
+}
+
+/* Links in the submenu */
+.mobileHeaderCoursesNav .mobileHeaderCoursesMenuContainer .mobileHeaderCoursesContainerMenu .activeNavLink .mobileHeaderCoursesSubMenu li a {
+    font-size: 16px;
+    color: #000;
+}
+
+/* Register button */
+.mobileHeaderCoursesBtnRegister {
+  position: relative;
+  background-color: #000;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  border: none;
+  height: 35px;
+  width: 110px;
+  border-radius:  5px;
+  cursor: pointer;
+  transition: color .7s ease-in-out, background-color .5s ease-in-out; 
+  overflow: hidden;
+  z-index: 999;
+}
+
+/* Button hover effect */
+.mobileHeaderCoursesBtnRegister::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0fc8a9;
+  color: #000;
+  z-index: -1; 
+  transition: transform .5s ease-in-out;
+  transform: scaleX(0); 
+  transform-origin: left;
+}
+
+/* Button hover animation */
+.mobileHeaderCoursesBtnRegister:hover::before {
+  transform: scaleX(1);
+}
+
+/* Button hover background color */
+.mobileHeaderCoursesBtnRegister:hover {
+  background-color: #0fc8a9;
+}
+
+
+
+
+
+
+
+

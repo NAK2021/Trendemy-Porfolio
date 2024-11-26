@@ -1,0 +1,125 @@
+.coursesContainerModules {
+    width: 100%;
+    overflow: hidden; 
+  }
+
+  .topArrow {
+    position: fixed;
+    bottom: 10px;
+    right: -50px; 
+    width: 50px; 
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0);
+    color: #0fc8a9;
+    border: 2px solid #0fc8a9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    transition: background-color 0.3s, transform 0.3s, opacity 0.3s, right 0.5s; 
+    opacity: 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .topArrow.visible {
+    opacity: .7;
+    right: 10px; 
+  }
+  
+  .topArrow.hidden {
+    opacity: 0;
+    right: -50px; 
+  }
+  
+  .topArrow:hover,
+  .topArrow:focus {
+    background-color: #0fc8a9; 
+    color: #fff;
+  }
+  
+  .topArrow .arrowContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .topArrow .arrowIcon {
+    font-size: 20px; 
+  }
+  
+  .topArrow:hover .arrowIcon,
+  .topArrow:focus .arrowIcon {
+    
+    transform: translateY(-2px); 
+  }
+
+  @media (min-width: 1400px) {
+    .topArrow {
+        width: 60px;
+        height: 60px;
+        font-size: 16px;
+    }
+    .topArrow .arrowIcon {
+        font-size: 22px;
+    }
+  }
+
+  @media (min-width: 1200px) and (max-width: 1399.98px) {
+    .topArrow {
+        width: 55px;
+        height: 55px;
+        font-size: 15px;
+    }
+    .topArrow .arrowIcon {
+        font-size: 21px;
+    }
+  }
+
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    .topArrow {
+        width: 50px;
+        height: 50px;
+        font-size: 14px;
+    }
+    .topArrow .arrowIcon {
+        font-size: 20px;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .topArrow {
+        width: 45px;
+        height: 45px;
+        font-size: 13px;
+    }
+    .topArrow .arrowIcon {
+        font-size: 18px;
+    }
+  }
+
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    .topArrow {
+        width: 40px;
+        height: 40px;
+        font-size: 12px;
+    }
+    .topArrow .arrowIcon {
+        font-size: 17px;
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    .topArrow {
+        width: 35px;
+        height: 35px;
+        font-size: 11px;
+    }
+    .topArrow .arrowIcon {
+        font-size: 16px;
+    }
+  }
+  

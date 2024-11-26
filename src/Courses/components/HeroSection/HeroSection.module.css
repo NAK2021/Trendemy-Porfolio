@@ -1,0 +1,381 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Roboto&display=swap');
+
+@font-face {
+    font-family: 'SVN-Nexa';
+    src: url('/src/Platform/Assets/fonts/SVN-Nexa\ Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+/* Container for the HeroSection */
+.heroSectionCoursesContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding-top: 170px;
+    background-color: #fdfeeb;
+    padding-top: 180px;
+    padding-right: 240px;
+    padding-bottom: 100px;
+    padding-left: 240px;
+    width: 100%;
+    height: 100%;
+}
+
+.heroSectionCoursesContainer .animationContentHeroSectionCourses {
+    width: 70%;
+}
+
+.heroSectionCoursesContainer .animationImgHeroSectionCourses {
+    width: 45%;
+}
+
+/* Main title of the heroSection */
+.heroSectionCoursesTitleOne {
+    font-size: 44px;
+    color: #000;
+    width: 390px;
+    font-family: 'SVN-Nexa', sans-serif;
+}
+
+.heroSectionCoursesTitleSecond {
+    font-size: 54px;
+    color: #0fc8a9;
+    font-family: 'SVN-Nexa', sans-serif;
+}
+
+/* Text content in the HeroSection */
+.heroSectionCoursesText {
+    margin-top: 1.5rem;
+    color: #000;
+    font-size: 16px;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    width: 92%;
+}
+
+/* Button styles for the registration button */
+.heroSectionCoursesBtnRegister {
+    position: relative;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    width: 172px;
+    height: 55px;
+    border: 1px solid #58bc96;
+    outline: none;
+    color: #fff;
+    background: #58bc96;
+    cursor: pointer;
+    z-index: 0;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    overflow: hidden;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.25);
+    margin-bottom: 184px;
+}
+
+.heroSectionCoursesBtnRegister::before {
+    content: '';
+    position: absolute;
+    bottom:0;
+    left: 0;
+    width: 200px;
+    height: 120px;
+    background: #069b63;
+    z-index: -1;
+    transition: transform .5s ease-in-out;
+    transform: scaleX(0) scaleY(0);
+    transform-origin: left bottom;
+    border-top-left-radius: 170px;
+    border-top-right-radius: 320px; 
+}
+
+/* Hover effect for the registration button */
+.heroSectionCoursesBtnRegister:hover{
+    border: #069b63;
+}
+
+.heroSectionCoursesBtnRegister:hover::before{
+    transform: scaleX(1) scaleY(1);
+}
+
+/* Container for the image */
+.heroSectionCoursesContainerImage {
+   margin-top: -4.5rem;
+}
+
+/* Image inside the container */
+.heroSectionCoursesContainerImage img {
+   max-width: 485px;
+   width: 100%;
+   margin-top: -100px;
+}
+
+/* Animation classes for the content and image */
+.animationContentHeroSectionCourses,
+.animationImgHeroSectionCourses {
+    width: 500px;
+    opacity: 0;
+    animation-duration: 2s;
+}
+  
+/* Fade in up animation */
+.animate__fadeInUp {
+    opacity: 1;
+    animation-name: animate__fadeInUp;
+}
+  
+@keyframes animate__fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (min-width: 1400px) {
+    .heroSectionCoursesContainer {
+        padding-top: 215px;
+        padding-right: 221px;
+        padding-bottom: 0px;
+        padding-left: 221px;
+        width: 100%;
+        height: auto;
+    }
+} 
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    .heroSectionCoursesContainer {
+        padding-top: 184px;
+        padding-right: 140px;
+        padding-bottom: 0px;
+        padding-left: 140px;
+        width: 100%;
+        height: auto;
+    }
+
+    .heroSectionCoursesTitleSecond {
+        font-size: 50px;
+    }
+
+    .heroSectionCoursesContainerImage img {
+        width: 100%;
+    }
+} 
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .heroSectionCoursesContainer {
+        padding-top: 184px;
+        padding-right: 80px;
+        padding-bottom: 0;
+        padding-left: 80px;
+        width: 100%;
+        height: auto;
+    }
+
+    .heroSectionCoursesTitleSecond {
+        font-size: 48px;
+    }
+
+    .heroSectionCoursesContainerImage img {
+        width: 100%;
+    }
+
+} 
+
+/* @media (min-width: 768px) and (max-width: 991.98px) {
+    .heroSectionCoursesContainer {
+        padding-top: 120px;
+        padding-right: 130px;
+        padding-left: 130px;
+        padding-bottom: 0;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .animationContentHeroSectionCourses {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .heroSectionCoursesTitleOne {
+        width: 355px;
+    }
+
+    .heroSectionCoursesText {
+        width: 100%;
+    }
+
+    .heroSectionCoursesContainerIcon {
+        width: 90%;
+    }
+
+    .heroSectionCoursesContainerIcon .heroSectionCoursesIconStar,
+    .heroSectionCoursesContainerIcon .heroSectionCoursesIconStudent,
+    .heroSectionCoursesContainerIcon .heroSectionCoursesIconClass {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .heroSectionCoursesIconStar .contentIconStar,
+    .heroSectionCoursesIconStudent .contentIconStudent,
+    .heroSectionCoursesIconClass .contentIconClass {
+        display: flex;
+        align-items: center;
+        margin: 0;
+    }
+
+    .heroSectionCoursesContainerImage {
+        margin-top: 1rem;
+        margin-bottom: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     }
+} 
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .heroSectionCoursesContainer {
+        padding-top: 120px;
+        padding-right: 60px;
+        padding-left: 60px;
+        padding-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    .animationContentHeroSectionCourses {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .heroSectionCoursesTitleOne {
+        width: 355px;
+    }
+
+    .heroSectionCoursesText {
+        width: 90%;
+    }
+
+    .heroSectionCoursesContainerIcon {
+        width: 80%;
+    }
+
+    .heroSectionCoursesContainerIcon .heroSectionCoursesIconStar,
+    .heroSectionCoursesContainerIcon .heroSectionCoursesIconStudent,
+    .heroSectionCoursesContainerIcon .heroSectionCoursesIconClass {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .heroSectionCoursesIconStar .contentIconStar,
+    .heroSectionCoursesIconStudent .contentIconStudent,
+    .heroSectionCoursesIconClass .contentIconClass {
+        display: flex;
+        align-items: center;
+        margin: 0;
+    }
+
+    .heroSectionCoursesContainerImage {
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     }
+
+     .heroSectionCoursesContainerImage img {
+        width: 80%;
+        height: 100%;
+        margin-bottom: 4rem;
+    }
+} 
+
+@media (max-width: 575.98px) {
+    .heroSectionCoursesContainer {
+        padding-top: 120px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    .animationContentHeroSectionCourses {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .heroSectionCoursesTitleOne {
+        width: 62%;
+        font-size: 210%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .heroSectionCoursesText {
+        width: 55%;
+    }
+
+    .heroSectionCoursesContainerIcon {
+        width: 50%;
+    }
+
+    .heroSectionCoursesContainerIcon .heroSectionCoursesIconStar,
+    .heroSectionCoursesContainerIcon .heroSectionCoursesIconStudent,
+    .heroSectionCoursesContainerIcon .heroSectionCoursesIconClass {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .heroSectionCoursesIconStar .contentIconStar,
+    .heroSectionCoursesIconStudent .contentIconStudent,
+    .heroSectionCoursesIconClass .contentIconClass {
+        display: flex;
+        align-items: center;
+        margin: 0;
+    }
+
+    .heroSectionCoursesBtnRegister {
+        width: 200px;
+        height: 60px;
+    }
+
+    .heroSectionCoursesContainerImage {
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     }
+
+     .heroSectionCoursesContainerImage img {
+        width: 60%;
+        height: 100%;
+        margin-bottom: 4rem;
+    }
+}  */
+
+

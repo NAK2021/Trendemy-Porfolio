@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Roboto&display=swap');
+
+@font-face {
+    font-family: 'SVN-Nexa';
+    src: url('/src/Platform/Assets/fonts/SVN-Nexa\ Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.heroSectionPlatform {
+    padding-top: 190px;
+    padding-right: 250px;
+    padding-bottom: 100px;
+    padding-left: 250px;
+    background-color: #fdfeeb;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 80vh;
+}
+
+.heroSectionPlatformContainer {
+    width: 49%;
+}
+
+.heroSectionPlatformContainerImg {
+    width: 60%;
+}
+
+.heroSectionPlatform .heroSectionPlatformContainer .heroSectionPlatformTitle {
+    font-family: 'SVN-Nexa', sans-serif;
+    color: #0fc8a9;
+    font-size: 54px;
+    padding: 0;
+    width: 400px;
+    line-height: 1.5;
+}
+
+.heroSectionPlatform .heroSectionPlatformContainer .heroSectionPlatformContent {
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+    font-size: 16px;
+    width: 420px;
+    text-align: justify;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.heroSectionPlatform .heroSectionPlatformContainer .heroSectionPlatformContainerBtn {
+    display: flex;
+    margin-bottom: 10rem;
+    gap: 28px;
+}
+
+.heroSectionPlatform .heroSectionPlatformContainer .heroSectionPlatformContainerBtn .heroSectionPlatformBtnRegister {
+    position: relative;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    width: 172px;
+    height: 55px;
+    border: 1px solid #58bc96;
+    outline: none;
+    color: #fff;
+    background: #58bc96;
+    cursor: pointer;
+    z-index: 0;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    overflow: hidden;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+.heroSectionPlatform .heroSectionPlatformContainer .heroSectionPlatformContainerBtn .heroSectionPlatformBtnRegister:before {
+    content: '';
+    position: absolute;
+    bottom:0;
+    left: 0;
+    width: 200px;
+    height: 120px;
+    background: #069b63;
+    z-index: -1;
+    transition: transform .5s ease-in-out;
+    transform: scaleX(0) scaleY(0);
+    transform-origin: left bottom;
+    border-top-left-radius: 170px;
+    border-top-right-radius: 320px;
+}
+
+.heroSectionPlatform .heroSectionPlatformContainer .heroSectionPlatformContainerBtn .heroSectionPlatformBtnRegister:hover {
+    border: #069b63;
+}
+
+.heroSectionPlatform .heroSectionPlatformContainer .heroSectionPlatformContainerBtn .heroSectionPlatformBtnRegister:hover:before {
+    transform: scaleX(1) scaleY(1);
+}
+
+.heroSectionPlatform .heroSectionPlatformContainerImg {
+    display: flex;
+    justify-content: center;
+}
+.heroSectionPlatform .heroSectionPlatformContainerImg .heroSectionPlatformUser {
+    max-height: 439px;
+    height: 100%;
+    width: 100%;
+    max-width: 560px;
+    margin-top: 10px;
+}
+
+/* The animation fades up */
+.TitleHeroSectionPlatform,
+.containerImageHeroSectionPlatfrom {
+    opacity: 0;
+    animation-duration: 2s;
+}
+  
+.animate__fadeInUp {
+    opacity: 1;
+    animation-name: animate__fadeInUp;
+}
+  
+@keyframes animate__fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+
+/* Breakpoint */
+/* XXL devices (very large desktops, 1400px and up */
+ @media (min-width: 1400px) {
+    .heroSectionPlatform {
+        padding-top: 163px;
+        padding-right: 221px;
+        padding-bottom: 0px;
+        padding-left: 221px;
+        height: auto;
+    }
+}
+
+/* Extra large devices (extra large desktops, 1200px and up*/
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    .heroSectionPlatform {
+        padding-top: 186px;
+        padding-right: 140px;
+        padding-bottom: 0px;
+        padding-left: 140px;
+        height: auto;
+    }
+
+    .heroSectionPlatform .heroSectionPlatformContainer .heroSectionPlatformTitle {
+        font-size: 52px;
+        line-height: 1.4;
+    }
+
+    .heroSectionPlatform .heroSectionPlatformContainer .heroSectionPlatformContent {
+        width: 95%;
+    }
+
+    .heroSectionPlatform .heroSectionPlatformContainerImg .heroSectionPlatformUser {
+        height: 77%;
+    }
+}
+
+/* Large devices (large desktops, 992px and up*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .heroSectionPlatform {
+        padding-top: 190px;
+        padding-right: 80px;
+        padding-bottom: 0px;
+        padding-left: 80px;
+        height: auto;
+    }
+
+    .heroSectionPlatform .heroSectionPlatformContainer .heroSectionPlatformTitle {
+        font-size: 50px;
+        line-height: 1.4;
+    }
+
+    .heroSectionPlatform .heroSectionPlatformContainer .heroSectionPlatformContent {
+        width: 95%;
+    }
+
+    .heroSectionPlatform .heroSectionPlatformContainerImg .heroSectionPlatformUser {
+        height: 72%;
+    }
+}
+
+/* @media (min-width: 768px) and (max-width: 991.98px) {
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+}
+@media (max-width: 575.98px) {
+    .heroSectionPlatform {
+        padding-top: 0px;
+        padding-right: 10px;
+        padding-bottom: 0;
+        padding-left: 10px;
+        background-image: url(../../Assets/img/heroSectionBackgroundMobile.png);
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .heroSectionPlatformContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .heroSectionPlatform .heroSectionPlatformContainer .heroSectionPlatformTitle {
+        font-size: 31px;
+        margin-top: 110px;
+    }
+
+    .heroSectionPlatform .heroSectionPlatformContainer .heroSectionPlatformContent {
+        font-size: 16px;
+        width: 267px;
+        text-align: center;
+    }
+
+    .heroSectionPlatform .heroSectionPlatformContainer .heroSectionPlatformContainerBtn {
+        display: flex;
+        margin-bottom: 11px;
+        width: 110%;
+    }
+
+    .heroSectionPlatform .heroSectionPlatformContainer .heroSectionPlatformContainerBtn .heroSectionPlatformBtnRegister,
+    .heroSectionPlatform .heroSectionPlatformContainer .heroSectionPlatformContainerBtn .heroSectionPlatformBtnSeeMore {
+        width: 100%;
+    }
+
+    .heroSectionPlatform .heroSectionPlatformContainerImg .heroSectionPlatformUser {
+        width: 70%;
+    }
+} */
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+

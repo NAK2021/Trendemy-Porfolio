@@ -1,0 +1,186 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Roboto&display=swap");
+
+/* Main header container */
+.desktopHeaderPlatform {
+  height: 83px;
+  background-color: #151c1b;
+  padding-right: 245px;
+  padding-left: 235px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1001;
+  width: 100%;
+}
+
+.desktopHeaderPlatformScrolled {
+  background-color: #151c1b;
+  border-bottom: none;
+}
+
+.desktopHeaderPlatform.desktopHeaderPlatformScrolled
+  .desktopHeaderPlatformNav
+  .desktopHeaderPlatformMenu
+  .desktopHeaderPlatformMenuItem
+  a {
+  color: #fff;
+}
+
+.desktopHeaderPlatform.desktopHeaderPlatformScrolled
+  .desktopHeaderPlatformNav
+  .desktopHeaderPlatformMenu
+  .desktopHeaderPlatformMenuItem
+  a:hover {
+  color: #0fc8a9;
+}
+
+/* Logo container */
+.desktopHeaderPlatformLogo img {
+  width: 200px;
+  height: auto;
+  max-height: 56px;
+  cursor: pointer;
+}
+
+/* Navigation container */
+.desktopHeaderPlatformNav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+/* Main menu list */
+.desktopHeaderPlatformNav .desktopHeaderPlatformMenu {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+/* Main menu item */
+.desktopHeaderPlatformNav
+  .desktopHeaderPlatformMenu
+  .desktopHeaderPlatformMenuItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 91px;
+}
+
+/* Remove right margin for the first item and left margin for the last item */
+.desktopHeaderPlatformNav
+  .desktopHeaderPlatformMenu
+  .desktopHeaderPlatformMenuItem:first-child {
+  margin-left: 0;
+}
+
+.desktopHeaderPlatformNav
+  .desktopHeaderPlatformMenu
+  .desktopHeaderPlatformMenuItem:last-child {
+  margin-right: 0;
+}
+
+/* Main menu link */
+.desktopHeaderPlatformNav
+  .desktopHeaderPlatformMenu
+  .desktopHeaderPlatformMenuItem
+  a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect for main menu link */
+.desktopHeaderPlatformNav
+  .desktopHeaderPlatformMenu
+  .desktopHeaderPlatformMenuItem
+  a:hover {
+  color: #0fc8a9;
+}
+
+/* Active link */
+.desktopHeaderPlatformNav
+  .desktopHeaderPlatformMenu
+  .desktopHeaderPlatformMenuItem
+  .desktopHeaderPlatformActive {
+  color: #0fc8a9 !important;
+}
+
+/* Register button */
+.desktopHeaderPlatformBtnRegister {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  background-color: #0fc8a9;
+  color: #fff;
+  border: none;
+  height: 43px;
+  width: 126px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+/* Button hover effect */
+.desktopHeaderPlatformBtnRegister:hover {
+  border: 1px solid #0fc8a9;
+  color: #0fc8a9;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.desktopHeaderPlatformBtnRegister:hover::before {
+  transform: scaleX(1);
+}
+
+/* Breakpoints for responsive design */
+@media (min-width: 1400px) {
+  .desktopHeaderPlatform {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+
+  .desktopHeaderPlatformNav
+    .desktopHeaderPlatformMenu
+    .desktopHeaderPlatformMenuItem {
+    margin-left: -15px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .desktopHeaderPlatform {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  .desktopHeaderPlatformNav
+    .desktopHeaderPlatformMenu
+    .desktopHeaderPlatformMenuItem {
+    margin-left: -40px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .desktopHeaderPlatform {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .desktopHeaderPlatformNav
+    .desktopHeaderPlatformMenu
+    .desktopHeaderPlatformMenuItem {
+    margin-left: -60px;
+  }
+}

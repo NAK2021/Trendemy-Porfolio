@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+@font-face {
+  font-family: 'SVN-Nexa';
+  src: url('/src/Platform/Assets/fonts/SVN-Nexa\ Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+.heroSectionContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fefbec;
+  padding-top: 100px;
+  padding-right: 250px;
+  padding-bottom: 50px;
+  padding-left: 250px;
+}
+
+.heroSectionContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.heroSectionTextContent {
+  flex: 2;
+  margin-top: 132px;
+}
+
+.heroSectionTitle {
+  font-family: "SVN-Nexa", sans-serif;
+  font-size: 44px;
+  color: #000000;
+}
+
+.heroSectionName {
+  font-family: "SVN-Nexa", sans-serif;
+  font-size: 54px;
+  color: #0FC8A9;
+}
+
+.heroSectionDescription {
+  font-size: 16px;
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  max-width: 80%;
+  margin-top: 16px;
+}
+
+.heroSectionButton {
+  position: relative;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  width: 164px;
+  height: 52px;
+  border: 1px solid #58bc96;
+  outline: none;
+  color: #fff;
+  background: #58bc96;
+  cursor: pointer;
+  z-index: 0;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+  overflow: hidden;
+  margin-top: 10px;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+.heroSectionButton::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 200px;
+  height: 120px;
+  background: #069b63;
+  z-index: -1;
+  transition: transform 0.5s ease-in-out;
+  transform: scaleX(0) scaleY(0);
+  transform-origin: left bottom;
+  border-top-left-radius: 170px;
+  border-top-right-radius: 320px;
+}
+
+.heroSectionButton:hover::before {
+  transform: scaleX(1) scaleY(1);
+}
+
+.heroSectionImageContainer {
+  flex: 1;
+  display: flex;
+  justify-content: right;
+  margin-top: 32px;
+}
+
+.heroSectionImage {
+  height: 514px;
+  width: 416px;
+}
+
+.heroSectionStatisticsContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 96px;
+  margin-left: -30px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.heroSectionStatisticsContent {
+  text-align: center;
+  flex: 1;
+}
+
+.heroSectionStatisticsContent:not(:last-child) {
+  border-right: 1.5px solid #000000;
+  padding-right: 20px;
+}
+
+.heroSectionStatisticsCount {
+  font-size: 31px;
+  color: #0fc8a9;
+  font-family: "SVN-Nexa", sans-serif;
+}
+
+.heroSectionStatisticsContent p {
+  font-size: 22px;
+  color: #000000;
+  font-family: "SVN-Nexa", sans-serif;
+  margin-top: 5px;
+}

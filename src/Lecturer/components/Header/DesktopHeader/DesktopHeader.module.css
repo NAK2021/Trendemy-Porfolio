@@ -1,0 +1,357 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Roboto&display=swap');
+
+ul, li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}  
+
+/* Icon styling */
+.iconMenu {
+    margin-left: 5px;
+    font-size: 20px;
+    color: #0fc8a9;
+}
+
+/* Main header container */
+.desktopHeaderLecturer {
+    height: 83px;
+    background-color: #151c1b;
+    padding-right: 245px;
+    padding-left: 235px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-bottom: 1px solid #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+/* Logo container */
+.desktopHeaderLecturerLogo img {
+    width: 200px;
+    height: auto;
+    max-height: 56px;
+    cursor: pointer;
+}
+
+/* Navigation container */
+.desktopHeaderLecturerNav {
+    display: flex;
+    align-items: center;  
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+/* Main menu list */
+.desktopHeaderLecturerNav .desktopHeaderLecturerMenu {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+/* Main menu item */
+.desktopHeaderLecturerNav .desktopHeaderLecturerMenu .desktopHeaderLecturerMenuItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 91px;
+}
+
+/* Remove right margin for the first item and left margin for the last item */
+.desktopHeaderLecturerNav .desktopHeaderLecturerMenu .desktopHeaderLecturerMenuItem:first-child {
+    margin-left: 0;
+}
+
+.desktopHeaderLecturerNav .desktopHeaderLecturerMenu .desktopHeaderLecturerMenuItem:last-child {
+    margin-right: 0;
+}
+
+/* Main menu link */
+.desktopHeaderLecturerNav .desktopHeaderLecturerMenu .desktopHeaderLecturerMenuItem a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for main menu link */
+.desktopHeaderLecturerNav .desktopHeaderLecturerMenu .desktopHeaderLecturerMenuItem a:hover {
+    color: #0fc8a9;
+}
+
+/* Active link */
+.desktopHeaderLecturerNav .desktopHeaderLecturerMenu .desktopHeaderLecturerMenuItem .desktopHeaderLecturerActive {
+    color: #0fc8a9 !important;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+/* Register button */
+.desktopHeaderLecturerBtnRegister {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    background-color: #0fc8a9;
+    color: #fff;
+    border: none;
+    height: 43px;
+    width: 126px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.desktopHeaderLecturerBtnRegister:hover {
+    border: 1px solid #0fc8a9;
+    color: #0fc8a9;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+/* Dropdown Menu in the Header */
+.desktopHeaderLecturerDropdownMenu {
+    position: absolute;
+    top: calc(100px + 5px);
+    right: 10rem;
+    top: 4.7rem;
+    background-color: #fff;
+    z-index: 1000;
+    display: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    width: 12.8rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.desktopHeaderLecturerMenuItem.active .desktopHeaderLecturerDropdownMenu {
+    display: block;
+}
+
+.desktopHeaderLecturerDropdownLinkContainer {
+    position: relative;
+}
+
+.desktopHeaderLecturerDropdownLink {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    align-items: center;
+    padding: 11px;
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    min-width: auto;
+    box-sizing: border-box;
+    white-space: nowrap;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    z-index: 1;
+}
+
+.desktopHeaderLecturerDropdownLink:hover,
+.desktopHeaderLecturerDropdownLink.active {
+    background-color: #0fc8a9;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color: #fff;
+    width: calc(100%);
+    z-index: 10;
+    position: relative;
+}
+
+.desktopHeaderLecturerDropdownLink:hover::after,
+.desktopHeaderLecturerDropdownLink.active::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -29.5px;
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 30px solid #0fc8a9;
+}
+
+.desktopHeaderLecturerDropdownLink .desktopHeaderLecturerIconArrow {
+    font-size: 30px;
+}
+
+.desktopHeaderLecturerDropdownLink:hover .desktopHeaderLecturerIconArrow {
+    color: #fff; 
+}
+
+/* Submenu in Dropdown Menu */
+.desktopHeaderLecturerDropDownSubmenu {
+    position: absolute;
+    top: -1%;
+    left: 420px;
+    background-color: #fff;
+    z-index: 1000;
+    display: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    width: 18rem;
+    flex-direction: column;
+    z-index: 5;
+}
+
+.desktopHeaderLecturerDropdownLinkContainer:hover .desktopHeaderLecturerDropDownSubmenu {
+    display: block;
+}
+
+.desktopHeaderLecturerDropdownLinkContainer:hover .desktopHeaderLecturerDropDownSubmenu .desktopHeaderLecturerDropDownSubmenuLink {
+    padding: 10px;
+    padding-top: 15px;
+    margin-left: -80px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #000;
+    white-space: nowrap;
+    transition: color 0.3s ease;
+}
+
+.desktopHeaderLecturerDropdownLinkContainer:hover .desktopHeaderLecturerDropDownSubmenu .desktopHeaderLecturerDropDownSubmenuLink:hover {
+    color: #0fc8a9;
+}
+
+/* Breakpoints for responsive design */
+@media (min-width: 1400px) {
+  .desktopHeaderLecturer {
+      padding-right: 60px;
+      padding-left: 60px;
+  }
+
+  .desktopHeaderLecturerNav .desktopHeaderLecturerMenu .desktopHeaderLecturerMenuItem {
+      margin-left: -15px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width:1399.98px){
+  .desktopHeaderLecturer {
+      padding-right: 50px;
+      padding-left: 50px;
+  }
+
+  .desktopHeaderLecturerNav .desktopHeaderLecturerMenu .desktopHeaderLecturerMenuItem {
+      margin-left: -40px;
+  }
+
+  .desktopHeaderLecturerDropdownLink {
+      margin-left: -90px;
+  }
+
+  .desktopHeaderLecturerDropdownLink:hover::after,
+  .desktopHeaderLecturerDropdownLink.active::after {
+      right: -30px; 
+  }
+
+  .desktopHeaderLecturerDropDownSubmenu {
+      left: 315px;
+  }
+}
+
+@media (min-width: 992px) and (max-width:1199.98px){
+  .desktopHeaderLecturer {
+      padding-right: 40px;
+      padding-left: 40px;
+  }
+
+  .desktopHeaderLecturerNav .desktopHeaderLecturerMenu .desktopHeaderLecturerMenuItem {
+      margin-left: -60px;
+  }
+
+  .desktopHeaderLecturerDropdownLink {
+      margin-left: -61px;
+  }
+
+  .desktopHeaderLecturerDropDownSubmenu {
+      left: 350px;
+  }
+}
+
+@media (min-width: 768px) and (max-width:991.98px) {
+  .desktopHeaderLecturer {
+      padding-right: 30px;
+      padding-left: 30px;
+      height: 70px;
+  }
+
+  .desktopHeaderLecturerNav .desktopHeaderLecturerMenu .desktopHeaderLecturerMenuItem {
+      margin-left: -50px;
+      font-size: 16px;
+  }
+
+  .desktopHeaderLecturerDropdownLink {
+      margin-left: -40px;
+  }
+
+  .desktopHeaderLecturerDropDownSubmenu {
+      left: 320px;
+  }
+
+  .desktopHeaderLecturerBtnRegister {
+      font-size: 16px;
+      width: 110px;
+      height: 40px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .desktopHeaderLecturer {
+      padding-right: 20px;
+      padding-left: 20px;
+      flex-direction: column;
+      align-items: flex-start;
+      height: auto;
+  }
+
+  .desktopHeaderLecturerNav .desktopHeaderLecturerMenu {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 10px;
+  }
+
+  .desktopHeaderLecturerNav .desktopHeaderLecturerMenu .desktopHeaderLecturerMenuItem {
+      margin-left: 0;
+      margin-bottom: 10px;
+      font-size: 14px;
+  }
+
+  .desktopHeaderLecturerDropdownLink {
+      margin-left: 0;
+  }
+
+  .desktopHeaderLecturerDropDownSubmenu {
+      left: 200px;
+  }
+
+  .desktopHeaderLecturerBtnRegister {
+      font-size: 14px;
+      width: 100px;
+      height: 35px;
+  }
+}

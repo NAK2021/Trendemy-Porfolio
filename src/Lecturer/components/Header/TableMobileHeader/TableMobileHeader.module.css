@@ -1,0 +1,209 @@
+/* Header container */
+.mobileHeaderLecturer {
+  height: 68px;
+  width: 100%; 
+  background-color: #000;
+  padding: 7px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* Logo */
+.mobileHeaderLecturerLogo img {
+  width: 200px;
+  height: auto;
+  max-height: 56px;
+  cursor: pointer;
+}
+
+/* Main navigation */
+.mobileHeaderLecturerNav {
+  display: flex;
+  align-items: center;
+}
+
+/* Menu toggle button */
+.mobileHeaderLecturerMenu {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  z-index: 1; 
+  margin-right: 10px;
+}
+
+/* Icon in menu */
+.mobileHeaderLecturerIconMenu {
+  font-size: 28px;
+  color: #fff;
+}
+
+/* Container for mobile menu */
+.mobileHeaderLecturerMenuContainer {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  height: 100%;
+  width: 320px;
+  background-color: #fff;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: right 0.3s ease;
+  z-index: 2; 
+  overflow-x: hidden;
+}
+
+/* Display menu when open */
+.mobileHeaderLecturerMenuContainer.open {
+  right: 0;
+}
+
+/* Close menu icon */
+.mobileHeaderLecturerIconMenuClose {
+  position: absolute;
+  top: 4px;
+  left: 15px;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+/* Main menu list */
+.mobileHeaderLecturerMenuContainer .mobileHeaderLecturerContainerMenu {
+  list-style: none;
+  padding: 70px 20px;
+  margin: 0;
+}
+
+.mobileHeaderLecturerMenuContainer .mobileHeaderLecturerContainerMenu li {
+  margin-bottom: 10px;
+}
+
+/* Links in the main menu */
+.mobileHeaderLecturerMenuContainer .mobileHeaderLecturerContainerMenu li a {
+  text-decoration: none;
+  font-size: 18px;
+  padding: 0;
+  color: #000;
+}
+
+/* Color for active menu icon and category */
+
+.mobileHeaderLecturerMenuContainer .mobileHeaderLecturerContainerMenu .mobileHeaderLecturerMenuItem.active .mobileHeaderLecturerCategory {
+    color: #0fc8a9;
+}
+
+/* Icon in menu item */
+.mobileHeaderLecturerMenuContainer .mobileHeaderLecturerContainerMenu .mobileHeaderLecturerMenuItem .mobileHeaderLecturerIconMenu {
+  color: #000;
+  margin-top: 4px;
+  font-size: 20px;
+}
+
+/* Category in menu item */
+.mobileHeaderLecturerMenuContainer .mobileHeaderLecturerContainerMenu .mobileHeaderLecturerMenuItem .mobileHeaderLecturerCategory {
+ margin-right: 5px;
+}
+
+/* Menu item */
+.mobileHeaderLecturerMenuContainer .mobileHeaderLecturerContainerMenu .mobileHeaderLecturerMenuItem {
+  display: flex;
+  align-items: center;
+}
+
+/* Dropdown menu container */
+.mobileHeaderLecturerMenuContainer .mobileHeaderLecturerContainerMenu li .mobileHeaderLecturerDropdownMenu {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+
+/* Container for dropdown links */
+.mobileHeaderLecturerMenuContainer .mobileHeaderLecturerContainerMenu li .mobileHeaderLecturerDropdownMenu .mobileHeaderLecturerDropdownLinkContainer {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* Dropdown links */
+.mobileHeaderLecturerMenuContainer .mobileHeaderLecturerContainerMenu li .mobileHeaderLecturerDropdownMenu .mobileHeaderLecturerDropdownLinkContainer .mobileHeaderLecturerDropdownLink {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* Dropdown arrow icon */
+.mobileHeaderLecturerMenuContainer .mobileHeaderLecturerContainerMenu li .mobileHeaderLecturerDropdownMenu .mobileHeaderLecturerDropdownLinkContainer .mobileHeaderLecturerDropdownLink .mobileHeaderLecturerIconArrow {
+  color: #000;
+}
+
+/* Change color of active dropdown link */
+.mobileHeaderLecturerMenuContainer .mobileHeaderLecturerContainerMenu li .mobileHeaderLecturerDropdownMenu .mobileHeaderLecturerDropdownLinkContainer .mobileHeaderLecturerDropdownLink.active {
+  color: #0fc8a9;
+}
+
+/* Submenu item */
+.mobileHeaderLecturerMenuContainer .mobileHeaderLecturerContainerMenu li .mobileHeaderLecturerDropdownMenu .mobileHeaderLecturerDropdownLinkContainer .mobileHeaderLecturerSubmenu .mobileHeaderLecturerSubmenuItem {
+  list-style: none;
+  margin: 0;
+  margin-top: 10px;
+}
+
+/* Submenu link */
+.mobileHeaderLecturerMenuContainer .mobileHeaderLecturerContainerMenu li .mobileHeaderLecturerDropdownMenu .mobileHeaderLecturerDropdownLinkContainer .mobileHeaderLecturerSubmenu .mobileHeaderLecturerSubmenuItem .mobileHeaderLecturerSubmenuLink {
+  font-size: 14px;
+}
+
+/* Active navigation link */
+.mobileHeaderLecturerMenuContainer .mobileHeaderLecturerContainerMenu .activeNavLink a{
+  color: #0fc8a9;
+}
+
+/* Register button */
+.mobileHeaderLecturerBtnRegister {
+  position: relative;
+  background-color: #000;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  border: none;
+  height: 35px;
+  width: 110px;
+  border-radius:  5px;
+  cursor: pointer;
+  transition: color .7s ease-in-out, background-color .5s ease-in-out; 
+  overflow: hidden;
+  z-index: 999;
+}
+
+/* Button hover effect */
+.mobileHeaderLecturerBtnRegister::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0fc8a9;
+  color: #000;
+  z-index: -1; 
+  transition: transform .5s ease-in-out;
+  transform: scaleX(0); 
+  transform-origin: left;
+}
+
+/* Button hover animation */
+.mobileHeaderLecturerBtnRegister:hover::before {
+  transform: scaleX(1);
+}
+
+
+
+
